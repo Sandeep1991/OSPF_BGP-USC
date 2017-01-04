@@ -1,0 +1,127 @@
+Tier2   Prov1   5       4       NEWY    179.24.17.0/24
+Tier2   Prov2   5       15      SEAT    179.24.18.0/24
+Tier2   Peer1   5       11      WASH    179.24.27.0/24
+Tier2   Peer2   5       10      SALT    179.24.30.0/24
+Tier2   Cust1   5       14      KANS    179.24.31.0/24
+Tier2   Cust2   5       2       LOSA    179.24.32.0/24
+Tier2   Mgnt    5       100     HOUS-MGT        5.0.199.1/24
+
+
+ifconfig g5 5.0.199.2/24
+ip link add g5-ovs type veth peer name g5
+ifconfig g5-ovs up
+
+
+This works   ping <dst_ip> -I <host_interface_ip>
+R5
+!
+route-map R15_prefixes permit 5
+set community 4:100
+route-map R15_prefixes deny 10
+set community 15:100
+!
+route-map R4_prefixes permit 5
+set community 15:100 
+route-map R4_prefixes deny 10
+set community 4:100
+!
+route-map ALLOW_all permit 10
+set community 15:100
+route-map ALLOW_all permit 20
+set community 4:100
+
+router bgp 5
+neighbor 10.1.15.15 route-map R4_prefixes out
+neighbor 10.1.54.4 route-map R5_prefixes out
+neighbor 10.1.25.2 route-map ALLOW_all out
+neighbor 10.1.14.14 route-map ALLOW_all out
+
+
+//R15
+route-map LOCALPREF permit 10
+ set local-preference 500
+
+ 
+ Task 2:
+ To load share the traffic
+ Route distribution prefixes
+ 
+ access-list 10 permit 0.0.0.0 248.255.255.255
+ 
+ !For seat
+ !access-list 10 permit 9.0.0.0 0.255.255.255
+ 
+ route-map LOAD_SHARE permit 10
+ match ip address 10
+ set weight 200
+ 
+ router bgp
+ neighbor 
+ 
+ Task 3:
+ To advertise NEWY as more preferred to SEAT (AS-path prepending)
+ route-map AS5_PREPEND permit 10
+ set as-path prepend 5 5
+ ex
+ router bgp 5
+ neighbor  !direction is out
+ 
+ 
+ https://learningnetwork.cisco.com/thread/56704
+ BGP path selection http://www.cisco.com/c/en/us/support/docs/ip/border-gateway-protocol-bgp/13753-25.html
+ BGP load sharing http://www.cisco.com/c/en/us/support/docs/ip/border-gateway-protocol-bgp/13762-40.html
+ BGP conditional advertisement http://www.cisco.com/c/en/us/support/docs/ip/border-gateway-protocol-bgp/16137-cond-adv.html
+ BGP communities http://evilrouters.net/2009/03/18/using-bgp-communities-to-influence-routing/
+ Block network from peers http://www.cisco.com/c/en/us/support/docs/ip/border-gateway-protocol-bgp/13750-22.html
+ Modifying as path attribute http://www.cisco.com/c/en/us/td/docs/ios-xml/ios/iproute_bgp/configuration/xe-3se/3850/irg-xe-3se-3850-book/irg-prefix-filter.html
+ Route maps http://www.routeralley.com/guides/route_maps.pdf
+ ACLs http://www.cisco.com/c/en/us/support/docs/ip/access-lists/26448-ACLsamples.html
+ AS path prepending http://evilrouters.net/2009/03/07/using-as-path-prepending-to-influence-inbound-routing/
+ NVP/ NSX http://blog.scottlowe.org/learning-nvp-nsx/
+ BGP community list http://www.cisco.com/c/en/us/td/docs/ios-xml/ios/iproute_bgp/configuration/15-sy/irg-15-sy-book/irg-named-community-list.html
+ 
+ ETCs
+ http://serverfault.com/questions/399240/how-to-prevent-asymmetric-routing-with-multiple-ebgp-routers
+ 
+ 
+  nping --dest-mac fa:5e:64:73:75:5c --interface g3 --source-ip 3.0.199.2 --dest-ip 15.105.0.1 -v0 --tr
+  
+  
+  
+  
+ 
+neighbor 179.24.35.2 remote-as 2
+ neighbor 179.24.35.2 route-map SET_COMM_2 in
+ neighbor 179.24.35.2 route-map No-valley out
+!
+access-list 10 permit 18.0.0.0 0.255.255.255
+access-list 20 permit 8.0.0.0 0.255.255.255
+!
+ip community-list standard No-valley permit 8:2
+ip community-list standard No-valley permit 8:6
+ip community-list standard No-valley permit 8:19
+ip community-list standard No-valley permit 8:8
+!
+route-map No-valley permit 10
+ match community No-valley
+!
+route-map No-valley permit 15
+ match ip address 20
+ set community 8:8
+!
+route-map No-valley deny 20
+!
+route-map SET_COMM_2 permit 10
+ match ip address 10
+ set community 8:2
+ set local-preference 250
+!
+route-map SET_COMM_2 permit 20
+ set community 8:2
+ set local-preference 200
+!
+route-map SET_COMM_2 permit 30
+ set community 8:2
+ set local-preference 250
+!
+ip forwarding

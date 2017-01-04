@@ -1,0 +1,76 @@
+G5_NEWY(config-if)# do sh run
+Building configuration...
+
+Current configuration:
+!
+hostname G5_NEWY
+log file /var/log/quagga/ospfd_G5_NEWY.log
+log file /var/log/quagga/bgpd_G5_NEWY.log
+!
+password G5_NEWY
+!
+interface chic
+ ip address 5.0.1.1/24
+ ip ospf cost 20
+ ipv6 nd suppress-ra
+!
+interface ebgp_peer
+ ip address 179.24.17.5/24
+ ipv6 nd suppress-ra
+!
+interface host
+ ip address 5.101.0.2/24
+ ipv6 nd suppress-ra
+!
+interface lo
+!
+interface newy
+ ip address 179.24.17.5/24
+ ipv6 nd suppress-ra
+!
+interface wash
+ ip address 5.0.4.1/24
+ ip ospf cost 10
+ ipv6 nd suppress-ra
+!
+router bgp 5
+ bgp router-id 5.101.0.2
+ network 5.0.0.0/8
+ neighbor 5.102.0.2 remote-as 5
+ neighbor 5.102.0.2 update-source host
+ neighbor 5.102.0.2 next-hop-self
+ neighbor 5.103.0.2 remote-as 5
+ neighbor 5.103.0.2 update-source host
+ neighbor 5.103.0.2 next-hop-self
+ neighbor 5.104.0.2 remote-as 5
+ neighbor 5.104.0.2 update-source host
+ neighbor 5.104.0.2 next-hop-self
+ neighbor 5.105.0.2 remote-as 5
+ neighbor 5.105.0.2 update-source host
+ neighbor 5.105.0.2 next-hop-self
+ neighbor 5.106.0.2 remote-as 5
+ neighbor 5.106.0.2 update-source host
+ neighbor 5.106.0.2 next-hop-self
+ neighbor 5.107.0.2 remote-as 5
+ neighbor 5.107.0.2 update-source host
+ neighbor 5.107.0.2 next-hop-self
+ neighbor 5.108.0.2 remote-as 5
+ neighbor 5.108.0.2 update-source host
+ neighbor 5.108.0.2 next-hop-self
+ neighbor 5.109.0.2 remote-as 5
+ neighbor 5.109.0.2 update-source host
+ neighbor 5.109.0.2 next-hop-self
+ neighbor 179.24.17.1 remote-as 4
+!
+router ospf
+ network 5.0.1.0/24 area 0.0.0.0
+ network 5.0.4.0/24 area 0.0.0.0
+ network 5.101.0.0/24 area 0.0.0.0
+!
+ip route 5.101.0.0/24 host
+!
+ip forwarding
+!
+line vty
+!
+end

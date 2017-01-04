@@ -1,0 +1,427 @@
+!!!!!!!!!!!LOSA!!!!!!!!!!!!!!!!!!!
+G5_LOSA# sh run
+Building configuration...
+
+Current configuration:
+!
+hostname G5_LOSA
+log file /var/log/quagga/ospfd_G5_LOSA.log
+log file /var/log/quagga/bgpd_G5_LOSA.log
+!
+password G5_LOSA
+!
+interface ebgp_peer
+ ipv6 nd suppress-ra
+!
+interface host
+ ip address 5.108.0.2/24
+ ipv6 nd suppress-ra
+!
+interface hous
+ ip address 5.0.10.2/24
+ ip ospf cost 1229
+ ipv6 nd suppress-ra
+!
+interface lo
+!
+interface salt
+ ip address 5.0.11.2/24
+ ip ospf cost 1303
+ ipv6 nd suppress-ra
+!
+interface seat
+ ip address 5.0.13.1/24
+ ip ospf cost 1342
+ ipv6 nd suppress-ra
+!
+router ospf
+ network 5.0.10.0/24 area 0.0.0.0
+ network 5.0.11.0/24 area 0.0.0.0
+ network 5.0.13.0/24 area 0.0.0.0
+ network 5.108.0.0/24 area 0.0.0.0
+!
+ip forwarding
+!
+line vty
+!
+end
+!!!!!!!!!!!!HOUS!!!!!!!!!
+G5_HOUS# sh run
+Building configuration...
+
+Current configuration:
+!
+hostname G5_HOUS
+log file /var/log/quagga/ospfd_G5_HOUS.log
+log file /var/log/quagga/bgpd_G5_HOUS.log
+!
+password G5_HOUS
+!
+interface atla
+ ip address 5.0.7.2/24
+ ip ospf cost 385
+ ipv6 nd suppress-ra
+!
+interface ebgp_peer
+ ipv6 nd suppress-ra
+!
+interface host
+ ip address 5.106.0.2/24
+ ipv6 nd suppress-ra
+!
+interface kans
+ ip address 5.0.8.2/24
+ ip ospf cost 818
+ ipv6 nd suppress-ra
+!
+interface lo
+!
+interface losa
+ ip address 5.0.10.1/24
+ ip ospf cost 1229
+ ipv6 nd suppress-ra
+!
+interface mgt
+ ipv6 nd suppress-ra
+!
+router ospf
+ network 5.0.7.0/24 area 0.0.0.0
+ network 5.0.8.0/24 area 0.0.0.0
+ network 5.0.10.0/24 area 0.0.0.0
+ network 5.106.0.0/24 area 0.0.0.0
+!
+ip forwarding
+!
+line vty
+!
+end
+!!!!!!!!!!!!!!!!!!ATLA!!!!!!!!!!!!!!!!!
+G5_ATLA# sh run
+Building configuration...
+
+Current configuration:
+!
+hostname G5_ATLA
+log file /var/log/quagga/ospfd_G5_ATLA.log
+log file /var/log/quagga/bgpd_G5_ATLA.log
+!
+password G5_ATLA
+!
+interface chic
+ ip address 5.0.3.1/24
+ ip ospf cost 1045
+ ipv6 nd suppress-ra
+!
+interface ebgp_peer
+ ipv6 nd suppress-ra
+!
+interface host
+ ip address 5.104.0.2/24
+ ipv6 nd suppress-ra
+!
+interface hous
+ ip address 5.0.7.1/24
+ ip ospf cost 385
+ ipv6 nd suppress-ra
+!
+interface lo
+!
+interface wash
+ ip address 5.0.5.2/24
+ ip ospf cost 700
+ ipv6 nd suppress-ra
+!
+router ospf
+ network 5.0.3.0/24 area 0.0.0.0
+ network 5.0.5.0/24 area 0.0.0.0
+ network 5.0.7.0/24 area 0.0.0.0
+ network 5.104.0.0/24 area 0.0.0.0
+!
+ip forwarding
+!
+line vty
+!
+end
+G5_ATLA#
+
+!!!!!!!!!!!!!WASH!!!!!!!!!!!!!!!!!!!!
+G5_WASH# sh run
+Building configuration...
+
+Current configuration:
+!
+hostname G5_WASH
+log file /var/log/quagga/ospfd_G5_WASH.log
+log file /var/log/quagga/bgpd_G5_WASH.log
+!
+password G5_WASH
+!
+interface atla
+ ip address 5.0.5.1/24
+ ip ospf cost 700
+ ipv6 nd suppress-ra
+!
+interface chic
+ ip address 5.0.2.1/24
+ ip ospf cost 905
+ ipv6 nd suppress-ra
+!
+interface ebgp_peer
+ ipv6 nd suppress-ra
+!
+interface host
+ ip address 5.103.0.2/24
+ ipv6 nd suppress-ra
+!
+interface lo
+!
+interface newy
+ ip address 5.0.4.2/24
+ ip ospf cost 277
+ ipv6 nd suppress-ra
+!
+router ospf
+ network 5.0.2.0/24 area 0.0.0.0
+ network 5.0.4.0/24 area 0.0.0.0
+ network 5.0.5.0/24 area 0.0.0.0
+ network 5.103.0.0/24 area 0.0.0.0
+!
+ip forwarding
+!
+line vty
+!
+end
+G5_WASH#
+
+!!!!!!!!!!!!!NEWY!!!!!!!!!!!!!!!!!!!!!
+G5_NEWY# sh run
+Building configuration...
+
+Current configuration:
+!
+hostname G5_NEWY
+log file /var/log/quagga/ospfd_G5_NEWY.log
+log file /var/log/quagga/bgpd_G5_NEWY.log
+!
+password G5_NEWY
+!
+interface chic
+ ip address 5.0.1.1/24
+ ip ospf cost 1000
+ ipv6 nd suppress-ra
+!
+interface ebgp_peer
+ ipv6 nd suppress-ra
+!
+interface host
+ ip address 5.101.0.2/24
+ ipv6 nd suppress-ra
+!
+interface lo
+!
+interface wash
+ ip address 5.0.4.1/24
+ ip ospf cost 277
+ ipv6 nd suppress-ra
+!
+router ospf
+ network 5.0.1.0/24 area 0.0.0.0
+ network 5.0.4.0/24 area 0.0.0.0
+ network 5.101.0.0/24 area 0.0.0.0
+!
+ip forwarding
+!
+line vty
+!
+end
+G5_NEWY#
+
+!!!!!!!!!!!!!CHIC!!!!!!!!!!!!!!!!!
+G5_CHIC# sh run
+Building configuration...
+
+Current configuration:
+!
+hostname G5_CHIC
+log file /var/log/quagga/ospfd_G5_CHIC.log
+log file /var/log/quagga/bgpd_G5_CHIC.log
+!
+password G5_CHIC
+!
+interface atla
+ ip address 5.0.3.2/24
+ ip ospf cost 1045
+ ipv6 nd suppress-ra
+!
+interface ebgp_peer
+ ipv6 nd suppress-ra
+!
+interface host
+ ip address 5.102.0.2/24
+ ipv6 nd suppress-ra
+!
+interface kans
+ ip address 5.0.6.1/24
+ ip ospf cost 690
+ ipv6 nd suppress-ra
+!
+interface lo
+!
+interface newy
+ ip address 5.0.1.2/24
+ ip ospf cost 1000
+ ipv6 nd suppress-ra
+!
+interface wash
+ ip address 5.0.2.2/24
+ ip ospf cost 905
+ ipv6 nd suppress-ra
+!
+router ospf
+ network 5.0.1.0/24 area 0.0.0.0
+ network 5.0.2.0/24 area 0.0.0.0
+ network 5.0.3.0/24 area 0.0.0.0
+ network 5.0.6.0/24 area 0.0.0.0
+ network 5.102.0.0/24 area 0.0.0.0
+!
+ip forwarding
+!
+line vty
+!
+end
+!!!!!!!!!!!!!KANS!!!!!!!!!!!!!!!!!!!
+G5_KANS# sh run
+Building configuration...
+
+Current configuration:
+!
+hostname G5_KANS
+log file /var/log/quagga/ospfd_G5_KANS.log
+log file /var/log/quagga/bgpd_G5_KANS.log
+!
+password G5_KANS
+!
+interface chic
+ ip address 5.0.6.2/24
+ ip ospf cost 690
+ ipv6 nd suppress-ra
+!
+interface ebgp_peer
+ ipv6 nd suppress-ra
+!
+interface host
+ ip address 5.105.0.2/24
+ ipv6 nd suppress-ra
+!
+interface hous
+ ip address 5.0.8.1/24
+ ip ospf cost 818
+ ipv6 nd suppress-ra
+!
+interface lo
+!
+interface salt
+ ip address 5.0.9.1/24
+ ip ospf cost 1330
+ ipv6 nd suppress-ra
+!
+router ospf
+ network 5.0.6.0/24 area 0.0.0.0
+ network 5.0.8.0/24 area 0.0.0.0
+ network 5.0.9.0/24 area 0.0.0.0
+ network 5.105.0.0/24 area 0.0.0.0
+!
+ip forwarding
+!
+line vty
+!
+end
+G5_KANS#
+!!!!!!!!!!!!!!!SALT!!!!!!!!!!!!!!!!!!!!!!
+G5_SALT# sh run
+Building configuration...
+
+Current configuration:
+!
+hostname G5_SALT
+log file /var/log/quagga/ospfd_G5_SALT.log
+log file /var/log/quagga/bgpd_G5_SALT.log
+!
+password G5_SALT
+!
+interface ebgp_peer
+ ipv6 nd suppress-ra
+!
+interface host
+ ip address 5.107.0.2/24
+ ipv6 nd suppress-ra
+!
+interface kans
+ ip address 5.0.9.2/24
+ ip ospf cost 1330
+ ipv6 nd suppress-ra
+!
+interface lo
+!
+interface losa
+ ip address 5.0.11.1/24
+ ip ospf cost 1303
+ ipv6 nd suppress-ra
+!
+interface seat
+ ip address 5.0.12.1/24
+ ip ospf cost 913
+ ipv6 nd suppress-ra
+!
+router ospf
+ network 5.0.9.0/24 area 0.0.0.0
+ network 5.0.11.0/24 area 0.0.0.0
+ network 5.0.12.0/24 area 0.0.0.0
+ network 5.107.0.0/24 area 0.0.0.0
+!
+ip forwarding
+!
+line vty
+!
+end
+!!!!!!!!!!!!!!SEAT!!!!!!!!!!!!!!!!!!!!
+G5_SEAT# sh run
+Building configuration...
+
+Current configuration:
+!
+hostname G5_SEAT
+log file /var/log/quagga/ospfd_G5_SEAT.log
+log file /var/log/quagga/bgpd_G5_SEAT.log
+!
+password G5_SEAT
+!
+interface ebgp_peer
+ ipv6 nd suppress-ra
+!
+interface host
+ ip address 5.109.0.2/24
+ ipv6 nd suppress-ra
+!
+interface lo
+!
+interface losa
+ ip address 5.0.13.2/24
+ ip ospf cost 1342
+ ipv6 nd suppress-ra
+!
+interface salt
+ ip address 5.0.12.2/24
+ ip ospf cost 913
+ ipv6 nd suppress-ra
+!
+router ospf
+ network 5.0.12.0/24 area 0.0.0.0
+ network 5.0.13.0/24 area 0.0.0.0
+ network 5.109.0.0/24 area 0.0.0.0
+!
+ip forwarding
+!
+line vty
+!
+end

@@ -1,0 +1,652 @@
+root@main:~# nping --dest-mac 16:00:b9:ad:0d:d5 --interface g1 --source-ip 1.0.199.2 --dest-ip 4.5.5.5 -v0 --tr
+
+Starting Nping 0.6.40 ( http://nmap.org/nping ) at 2016-12-10 06:44 CET
+SENT (1.6384s) ICMP [1.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=10750 seq=1] IP [ttl=1 id=24240 iplen=28 ]
+RCVD (1.8360s) ICMP [1.0.199.1 > 1.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=64 id=35482 iplen=56 ]
+SENT (2.6389s) ICMP [1.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=10750 seq=3] IP [ttl=3 id=24240 iplen=28 ]
+RCVD (2.8360s) ICMP [1.0.5.1 > 1.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=62 id=4826 iplen=56 ]
+SENT (3.6389s) ICMP [1.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=10750 seq=4] IP [ttl=4 id=24240 iplen=28 ]
+RCVD (3.8360s) ICMP [1.0.4.1 > 1.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=61 id=52526 iplen=56 ]
+SENT (4.6390s) ICMP [1.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=10750 seq=5] IP [ttl=5 id=24240 iplen=28 ]
+RCVD (4.8360s) ICMP [179.24.23.1 > 1.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=60 id=349 iplen=56 ]
+SENT (5.6390s) ICMP [1.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=10750 seq=6] IP [ttl=6 id=24240 iplen=28 ]
+RCVD (5.8360s) ICMP [7.0.13.2 > 1.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=59 id=43247 iplen=56 ]
+SENT (6.6390s) ICMP [1.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=10750 seq=7] IP [ttl=7 id=24240 iplen=28 ]
+RCVD (6.8360s) ICMP [3.0.8.1 > 1.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=56 id=43397 iplen=56 ]
+SENT (7.6392s) ICMP [1.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=10750 seq=7] IP [ttl=7 id=24240 iplen=28 ]
+RCVD (7.8360s) ICMP [3.0.8.1 > 1.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=56 id=43530 iplen=56 ]
+SENT (8.6394s) ICMP [1.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=10750 seq=9] IP [ttl=9 id=24240 iplen=28 ]
+RCVD (8.8360s) ICMP [3.0.13.2 > 1.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=57 id=32231 iplen=56 ]
+SENT (9.6394s) ICMP [1.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=10750 seq=10] IP [ttl=10 id=24240 iplen=28 ]
+RCVD (9.8360s) ICMP [179.24.8.1 > 1.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=56 id=51941 iplen=56 ]
+SENT (10.6395s) ICMP [1.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=10750 seq=11] IP [ttl=11 id=24240 iplen=28 ]
+RCVD (10.8360s) ICMP [15.0.9.1 > 1.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=55 id=46870 iplen=56 ]
+SENT (11.6395s) ICMP [1.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=10750 seq=12] IP [ttl=12 id=24240 iplen=28 ]
+RCVD (11.8360s) ICMP [179.24.18.5 > 1.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=54 id=56908 iplen=56 ]
+SENT (12.6395s) ICMP [1.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=10750 seq=13] IP [ttl=13 id=24240 iplen=28 ]
+RCVD (12.8360s) ICMP [5.0.12.1 > 1.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=53 id=48879 iplen=56 ]
+SENT (13.6396s) ICMP [1.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=10750 seq=14] IP [ttl=14 id=24240 iplen=28 ]
+RCVD (13.8360s) ICMP [179.24.18.5 > 1.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=54 id=57278 iplen=56 ]
+SENT (14.6396s) ICMP [1.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=10750 seq=15] IP [ttl=15 id=24240 iplen=28 ]
+RCVD (14.8368s) ICMP [5.0.12.1 > 1.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=53 id=49036 iplen=56 ]
+SENT (15.6396s) ICMP [1.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=10750 seq=16] IP [ttl=16 id=24240 iplen=28 ]
+RCVD (15.8360s) ICMP [179.24.18.5 > 1.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=54 id=57581 iplen=56 ]
+SENT (16.6396s) ICMP [1.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=10750 seq=17] IP [ttl=17 id=24240 iplen=28 ]
+RCVD (16.8361s) ICMP [5.0.12.1 > 1.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=53 id=49364 iplen=56 ]
+SENT (17.6397s) ICMP [1.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=10750 seq=18] IP [ttl=18 id=24240 iplen=28 ]
+RCVD (17.8360s) ICMP [179.24.18.5 > 1.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=54 id=57688 iplen=56 ]
+SENT (18.6397s) ICMP [1.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=10750 seq=19] IP [ttl=19 id=24240 iplen=28 ]
+RCVD (18.8360s) ICMP [5.0.12.1 > 1.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=53 id=49727 iplen=56 ]
+SENT (19.6397s) ICMP [1.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=10750 seq=20] IP [ttl=20 id=24240 iplen=28 ]
+RCVD (19.8360s) ICMP [179.24.18.5 > 1.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=54 id=57759 iplen=56 ]
+^C 
+Max rtt: 197.586ms | Min rtt: 196.153ms | Avg rtt: 196.609ms
+Raw packets sent: 19 (798B) | Rcvd: 19 (1.064KB) | Lost: 0 (0.00%)
+Nping done: 1 IP address pinged in 20.17 seconds
+root@main:~# nping --dest-mac 0e:91:e1:e9:1b:50 --interface g2 --source-ip 2.0.199.2 --dest-ip 4.5.5.5 -v0 --tr
+
+Starting Nping 0.6.40 ( http://nmap.org/nping ) at 2016-12-10 06:45 CET
+SENT (1.6429s) ICMP [2.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=58400 seq=1] IP [ttl=1 id=5315 iplen=28 ]
+RCVD (1.8405s) ICMP [2.0.199.1 > 2.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=64 id=24420 iplen=56 ]
+SENT (2.6435s) ICMP [2.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=58400 seq=3] IP [ttl=3 id=5315 iplen=28 ]
+RCVD (2.8405s) ICMP [2.0.13.2 > 2.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=62 id=2118 iplen=56 ]
+SENT (3.6435s) ICMP [2.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=58400 seq=4] IP [ttl=4 id=5315 iplen=28 ]
+RCVD (3.8405s) ICMP [179.24.33.1 > 2.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=61 id=24825 iplen=56 ]
+SENT (4.6436s) ICMP [2.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=58400 seq=4] IP [ttl=4 id=5315 iplen=28 ]
+RCVD (4.8405s) ICMP [179.24.33.1 > 2.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=61 id=24898 iplen=56 ]
+SENT (5.6439s) ICMP [2.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=58400 seq=6] IP [ttl=6 id=5315 iplen=28 ]
+RCVD (5.8405s) ICMP [10.0.1.1 > 2.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=59 id=53021 iplen=56 ]
+SENT (6.6439s) ICMP [2.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=58400 seq=7] IP [ttl=7 id=5315 iplen=28 ]
+RCVD (6.8405s) ICMP [179.24.19.2 > 2.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=58 id=28516 iplen=56 ]
+SENT (7.6439s) ICMP [2.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=58400 seq=8] IP [ttl=8 id=5315 iplen=28 ]
+RCVD (7.8405s) ICMP [15.0.8.2 > 2.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=57 id=34280 iplen=56 ]
+SENT (8.6440s) ICMP [2.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=58400 seq=9] IP [ttl=9 id=5315 iplen=28 ]
+RCVD (8.8405s) ICMP [179.24.18.1 > 2.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=58 id=28424 iplen=56 ]
+SENT (9.6440s) ICMP [2.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=58400 seq=10] IP [ttl=10 id=5315 iplen=28 ]
+RCVD (9.8405s) ICMP [5.0.13.2 > 2.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=59 id=50317 iplen=56 ]
+SENT (10.6440s) ICMP [2.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=58400 seq=11] IP [ttl=11 id=5315 iplen=28 ]
+RCVD (10.8405s) ICMP [5.0.12.1 > 2.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=58 id=24443 iplen=56 ]
+SENT (11.6441s) ICMP [2.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=58400 seq=12] IP [ttl=12 id=5315 iplen=28 ]
+RCVD (11.8413s) ICMP [5.0.13.2 > 2.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=59 id=50582 iplen=56 ]
+^C 
+Max rtt: 197.553ms | Min rtt: 196.353ms | Avg rtt: 196.710ms
+Raw packets sent: 11 (462B) | Rcvd: 11 (616B) | Lost: 0 (0.00%)
+Nping done: 1 IP address pinged in 12.19 seconds
+root@main:~# nping --dest-mac 36:2b:a5:26:7d:b6 --interface g3 --source-ip 3.0.199.2 --dest-ip 4.5.5.5 -v0 --tr
+
+Starting Nping 0.6.40 ( http://nmap.org/nping ) at 2016-12-10 06:50 CET
+SENT (1.6422s) ICMP [3.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=10196 seq=1] IP [ttl=1 id=17274 iplen=28 ]
+RCVD (1.8399s) ICMP [3.0.199.1 > 3.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=64 id=22793 iplen=56 ]
+SENT (2.6427s) ICMP [3.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=10196 seq=3] IP [ttl=3 id=17274 iplen=28 ]
+RCVD (2.8407s) ICMP [3.0.13.2 > 3.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=62 id=40684 iplen=56 ]
+SENT (3.6428s) ICMP [3.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=10196 seq=4] IP [ttl=4 id=17274 iplen=28 ]
+RCVD (3.8399s) ICMP [179.24.8.1 > 3.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=61 id=62924 iplen=56 ]
+SENT (4.6487s) ICMP [3.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=10196 seq=4] IP [ttl=4 id=17274 iplen=28 ]
+RCVD (4.8403s) ICMP [179.24.8.1 > 3.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=61 id=63043 iplen=56 ]
+SENT (5.6493s) ICMP [3.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=10196 seq=6] IP [ttl=6 id=17274 iplen=28 ]
+RCVD (5.8399s) ICMP [179.24.18.5 > 3.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=59 id=22064 iplen=56 ]
+SENT (6.6493s) ICMP [3.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=10196 seq=7] IP [ttl=7 id=17274 iplen=28 ]
+RCVD (6.8399s) ICMP [5.0.12.1 > 3.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=58 id=14904 iplen=56 ]
+SENT (7.6494s) ICMP [3.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=10196 seq=8] IP [ttl=8 id=17274 iplen=28 ]
+RCVD (7.8399s) ICMP [179.24.18.5 > 3.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=59 id=22247 iplen=56 ]
+SENT (8.6494s) ICMP [3.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=10196 seq=9] IP [ttl=9 id=17274 iplen=28 ]
+RCVD (8.8399s) ICMP [5.0.12.1 > 3.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=58 id=15045 iplen=56 ]
+SENT (9.6494s) ICMP [3.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=10196 seq=10] IP [ttl=10 id=17274 iplen=28 ]
+RCVD (9.8399s) ICMP [179.24.18.5 > 3.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=59 id=22440 iplen=56 ]
+^C 
+Max rtt: 197.863ms | Min rtt: 190.398ms | Avg rtt: 192.930ms
+Raw packets sent: 9 (378B) | Rcvd: 9 (504B) | Lost: 0 (0.00%)
+Nping done: 1 IP address pinged in 9.89 seconds
+root@main:~# nping --dest-mac 06:7b:97:59:7b:5f --interface g4 --source-ip 4.0.199.2 --dest-ip 4.5.5.5 -v0 --tr
+
+Starting Nping 0.6.40 ( http://nmap.org/nping ) at 2016-12-10 06:50 CET
+SENT (1.6409s) ICMP [4.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=20772 seq=1] IP [ttl=1 id=62951 iplen=28 ]
+RCVD (1.8382s) ICMP [4.0.199.1 > 4.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=64 id=35877 iplen=56 ]
+SENT (2.6421s) ICMP [4.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=20772 seq=3] IP [ttl=3 id=62951 iplen=28 ]
+RCVD (2.8382s) ICMP [4.0.5.1 > 4.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=62 id=46898 iplen=56 ]
+SENT (3.6421s) ICMP [4.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=20772 seq=4] IP [ttl=4 id=62951 iplen=28 ]
+RCVD (3.8382s) ICMP [4.0.4.1 > 4.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=61 id=46311 iplen=56 ]
+SENT (4.6421s) ICMP [4.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=20772 seq=5] IP [ttl=5 id=62951 iplen=28 ]
+RCVD (4.8382s) ICMP [179.24.15.2 > 4.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=60 id=7082 iplen=56 ]
+SENT (5.6422s) ICMP [4.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=20772 seq=6] IP [ttl=6 id=62951 iplen=28 ]
+RCVD (5.8382s) ICMP [15.0.2.2 > 4.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=59 id=35423 iplen=56 ]
+SENT (6.6422s) ICMP [4.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=20772 seq=7] IP [ttl=7 id=62951 iplen=28 ]
+RCVD (6.8406s) ICMP [15.0.6.2 > 4.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=58 id=10194 iplen=56 ]
+SENT (7.6422s) ICMP [4.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=20772 seq=8] IP [ttl=8 id=62951 iplen=28 ]
+RCVD (7.8382s) ICMP [5.0.12.2 > 4.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=58 id=4631 iplen=56 ]
+SENT (8.6431s) ICMP [4.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=20772 seq=8] IP [ttl=8 id=62951 iplen=28 ]
+RCVD (8.8382s) ICMP [5.0.12.2 > 4.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=58 id=4770 iplen=56 ]
+SENT (9.6434s) ICMP [4.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=20772 seq=9] IP [ttl=9 id=62951 iplen=28 ]
+^C 
+Max rtt: 198.303ms | Min rtt: 194.955ms | Avg rtt: 196.252ms
+Raw packets sent: 9 (378B) | Rcvd: 8 (448B) | Lost: 1 (11.11%)
+Nping done: 1 IP address pinged in 9.79 seconds
+root@main:~# nping --dest-mac 2a:85:13:09:d4:5a --interface g5 --source-ip 5.0.199.2 --dest-ip 4.5.5.5 -v0 --tr
+
+Starting Nping 0.6.40 ( http://nmap.org/nping ) at 2016-12-10 06:51 CET
+SENT (1.6374s) ICMP [5.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=8207 seq=1] IP [ttl=1 id=36008 iplen=28 ]
+RCVD (1.8349s) ICMP [5.0.199.1 > 5.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=64 id=19741 iplen=56 ]
+SENT (2.6380s) ICMP [5.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=8207 seq=3] IP [ttl=3 id=36008 iplen=28 ]
+RCVD (2.8349s) ICMP [5.0.13.2 > 5.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=62 id=49604 iplen=56 ]
+SENT (3.6381s) ICMP [5.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=8207 seq=3] IP [ttl=3 id=36008 iplen=28 ]
+RCVD (3.8349s) ICMP [5.0.13.2 > 5.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=62 id=49839 iplen=56 ]
+SENT (4.6383s) ICMP [5.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=8207 seq=5] IP [ttl=5 id=36008 iplen=28 ]
+RCVD (4.8349s) ICMP [5.0.13.2 > 5.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=62 id=50084 iplen=56 ]
+SENT (5.6388s) ICMP [5.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=8207 seq=5] IP [ttl=5 id=36008 iplen=28 ]
+RCVD (5.8349s) ICMP [5.0.13.2 > 5.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=62 id=50093 iplen=56 ]
+SENT (6.6390s) ICMP [5.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=8207 seq=7] IP [ttl=7 id=36008 iplen=28 ]
+RCVD (6.8349s) ICMP [5.0.13.2 > 5.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=62 id=50155 iplen=56 ]
+SENT (7.6391s) ICMP [5.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=8207 seq=7] IP [ttl=7 id=36008 iplen=28 ]
+RCVD (7.8349s) ICMP [5.0.13.2 > 5.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=62 id=50271 iplen=56 ]
+SENT (8.6393s) ICMP [5.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=8207 seq=9] IP [ttl=9 id=36008 iplen=28 ]
+RCVD (8.8349s) ICMP [5.0.13.2 > 5.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=62 id=50501 iplen=56 ]
+SENT (9.6394s) ICMP [5.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=8207 seq=10] IP [ttl=10 id=36008 iplen=28 ]
+RCVD (9.8349s) ICMP [5.0.12.1 > 5.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=61 id=64231 iplen=56 ]
+SENT (10.6394s) ICMP [5.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=8207 seq=11] IP [ttl=11 id=36008 iplen=28 ]
+^C 
+Max rtt: 197.457ms | Min rtt: 195.455ms | Avg rtt: 196.219ms
+Raw packets sent: 10 (420B) | Rcvd: 9 (504B) | Lost: 1 (10.00%)
+Nping done: 1 IP address pinged in 10.83 seconds
+root@main:~# 
+root@main:~# nping --dest-mac 6a:13:5b:52:65:3b --interface g6 --source-ip 6.0.199.2 --dest-ip 4.5.5.5 -v0 --tr
+
+Starting Nping 0.6.40 ( http://nmap.org/nping ) at 2016-12-10 06:53 CET
+SENT (1.6404s) ICMP [6.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=7468 seq=1] IP [ttl=1 id=4060 iplen=28 ]
+RCVD (1.8380s) ICMP [6.0.199.1 > 6.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=64 id=183 iplen=56 ]
+SENT (2.6423s) ICMP [6.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=7468 seq=2] IP [ttl=2 id=4060 iplen=28 ]
+RCVD (2.8384s) ICMP [6.0.10.2 > 6.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=63 id=402 iplen=56 ]
+SENT (3.6431s) ICMP [6.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=7468 seq=3] IP [ttl=3 id=4060 iplen=28 ]
+RCVD (3.8380s) ICMP [6.0.13.2 > 6.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=62 id=3443 iplen=56 ]
+SENT (4.6434s) ICMP [6.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=7468 seq=5] IP [ttl=5 id=4060 iplen=28 ]
+RCVD (4.8380s) ICMP [8.0.6.1 > 6.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=60 id=63583 iplen=56 ]
+SENT (5.6434s) ICMP [6.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=7468 seq=6] IP [ttl=6 id=4060 iplen=28 ]
+RCVD (5.8380s) ICMP [8.0.1.1 > 6.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=59 id=39165 iplen=56 ]
+SENT (6.6434s) ICMP [6.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=7468 seq=7] IP [ttl=7 id=4060 iplen=28 ]
+RCVD (6.8380s) ICMP [179.24.34.1 > 6.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=58 id=13572 iplen=56 ]
+SENT (7.6435s) ICMP [6.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=7468 seq=8] IP [ttl=8 id=4060 iplen=28 ]
+RCVD (7.8380s) ICMP [10.0.8.2 > 6.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=57 id=39239 iplen=56 ]
+SENT (8.6484s) ICMP [6.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=7468 seq=8] IP [ttl=8 id=4060 iplen=28 ]
+RCVD (8.8380s) ICMP [10.0.8.2 > 6.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=57 id=39484 iplen=56 ]
+SENT (9.6493s) ICMP [6.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=7468 seq=10] IP [ttl=10 id=4060 iplen=28 ]
+RCVD (9.8380s) ICMP [10.0.2.1 > 6.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=56 id=18055 iplen=56 ]
+SENT (10.6499s) ICMP [6.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=7468 seq=10] IP [ttl=10 id=4060 iplen=28 ]
+RCVD (10.8384s) ICMP [10.0.2.1 > 6.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=56 id=18099 iplen=56 ]
+SENT (11.6504s) ICMP [6.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=7468 seq=11] IP [ttl=11 id=4060 iplen=28 ]
+RCVD (11.8380s) ICMP [10.0.1.1 > 6.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=56 id=37766 iplen=56 ]
+SENT (12.6510s) ICMP [6.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=7468 seq=13] IP [ttl=13 id=4060 iplen=28 ]
+RCVD (12.8380s) ICMP [15.0.8.2 > 6.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=52 id=45781 iplen=56 ]
+SENT (13.6512s) ICMP [6.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=7468 seq=13] IP [ttl=13 id=4060 iplen=28 ]
+RCVD (13.8380s) ICMP [15.0.8.2 > 6.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=52 id=45876 iplen=56 ]
+SENT (14.6514s) ICMP [6.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=7468 seq=15] IP [ttl=15 id=4060 iplen=28 ]
+RCVD (14.8380s) ICMP [5.0.13.2 > 6.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=54 id=55394 iplen=56 ]
+SENT (15.6514s) ICMP [6.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=7468 seq=16] IP [ttl=16 id=4060 iplen=28 ]
+RCVD (15.8380s) ICMP [5.0.12.1 > 6.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=53 id=54606 iplen=56 ]
+^C 
+Max rtt: 197.539ms | Min rtt: 186.457ms | Avg rtt: 191.067ms
+Raw packets sent: 15 (630B) | Rcvd: 15 (840B) | Lost: 0 (0.00%)
+Nping done: 1 IP address pinged in 16.54 seconds
+root@main:~# nping --dest-mac 7a:77:7a:5e:77:48 --interface g7 --source-ip 7.0.199.2 --dest-ip 4.5.5.5 -v0 --tr
+
+Starting Nping 0.6.40 ( http://nmap.org/nping ) at 2016-12-10 06:54 CET
+SENT (1.6568s) ICMP [7.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=19847 seq=1] IP [ttl=1 id=10408 iplen=28 ]
+RCVD (1.8546s) ICMP [7.0.199.1 > 7.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=64 id=64819 iplen=56 ]
+SENT (2.6573s) ICMP [7.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=19847 seq=3] IP [ttl=3 id=10408 iplen=28 ]
+RCVD (2.8546s) ICMP [7.0.13.2 > 7.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=62 id=58840 iplen=56 ]
+SENT (3.6573s) ICMP [7.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=19847 seq=4] IP [ttl=4 id=10408 iplen=28 ]
+RCVD (3.8546s) ICMP [179.24.9.2 > 7.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=61 id=43196 iplen=56 ]
+SENT (4.6574s) ICMP [7.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=19847 seq=5] IP [ttl=5 id=10408 iplen=28 ]
+RCVD (4.8546s) ICMP [3.0.9.2 > 7.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=60 id=7095 iplen=56 ]
+SENT (5.6574s) ICMP [7.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=19847 seq=6] IP [ttl=6 id=10408 iplen=28 ]
+RCVD (5.8546s) ICMP [3.0.12.2 > 7.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=59 id=48964 iplen=56 ]
+SENT (6.6574s) ICMP [7.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=19847 seq=7] IP [ttl=7 id=10408 iplen=28 ]
+RCVD (6.8546s) ICMP [15.0.9.2 > 7.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=53 id=31258 iplen=56 ]
+SENT (7.6575s) ICMP [7.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=19847 seq=8] IP [ttl=8 id=10408 iplen=28 ]
+RCVD (7.8546s) ICMP [15.0.6.2 > 7.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=54 id=24689 iplen=56 ]
+SENT (8.6575s) ICMP [7.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=19847 seq=9] IP [ttl=9 id=10408 iplen=28 ]
+RCVD (8.8546s) ICMP [5.0.12.2 > 7.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=52 id=41215 iplen=56 ]
+SENT (9.6575s) ICMP [7.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=19847 seq=10] IP [ttl=10 id=10408 iplen=28 ]
+RCVD (9.8546s) ICMP [5.0.9.2 > 7.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=53 id=22123 iplen=56 ]
+^C 
+Max rtt: 197.751ms | Min rtt: 196.932ms | Avg rtt: 197.111ms
+Raw packets sent: 9 (378B) | Rcvd: 9 (504B) | Lost: 0 (0.00%)
+Nping done: 1 IP address pinged in 10.65 seconds
+root@main:~# 
+
+root@main:~# nping --dest-mac 2a:1d:d7:41:1e:5a --interface g8 --source-ip 8.0.199.2 --dest-ip 4.5.5.5 -v0 --tr
+
+Starting Nping 0.6.40 ( http://nmap.org/nping ) at 2016-12-10 06:55 CET
+SENT (1.6356s) ICMP [8.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=57442 seq=1] IP [ttl=1 id=38837 iplen=28 ]
+RCVD (1.8333s) ICMP [8.0.199.1 > 8.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=64 id=5950 iplen=56 ]
+SENT (2.6378s) ICMP [8.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=57442 seq=3] IP [ttl=3 id=38837 iplen=28 ]
+RCVD (2.8333s) ICMP [8.0.5.1 > 8.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=62 id=49204 iplen=56 ]
+SENT (3.6379s) ICMP [8.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=57442 seq=4] IP [ttl=4 id=38837 iplen=28 ]
+RCVD (3.8333s) ICMP [8.0.6.1 > 8.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=62 id=37709 iplen=56 ]
+SENT (4.6379s) ICMP [8.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=57442 seq=5] IP [ttl=5 id=38837 iplen=28 ]
+RCVD (4.8333s) ICMP [8.0.4.1 > 8.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=61 id=57436 iplen=56 ]
+SENT (5.6379s) ICMP [8.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=57442 seq=6] IP [ttl=6 id=38837 iplen=28 ]
+RCVD (5.8333s) ICMP [179.24.34.1 > 8.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=60 id=12303 iplen=56 ]
+SENT (6.6380s) ICMP [8.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=57442 seq=7] IP [ttl=7 id=38837 iplen=28 ]
+RCVD (6.8333s) ICMP [10.0.10.1 > 8.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=59 id=50188 iplen=56 ]
+SENT (7.6380s) ICMP [8.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=57442 seq=8] IP [ttl=8 id=38837 iplen=28 ]
+RCVD (7.8333s) ICMP [10.0.7.1 > 8.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=58 id=75 iplen=56 ]
+SENT (8.6380s) ICMP [8.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=57442 seq=9] IP [ttl=9 id=38837 iplen=28 ]
+RCVD (8.8333s) ICMP [10.0.5.1 > 8.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=57 id=13786 iplen=56 ]
+SENT (9.6381s) ICMP [8.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=57442 seq=10] IP [ttl=10 id=38837 iplen=28 ]
+RCVD (9.8333s) ICMP [10.0.4.1 > 8.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=56 id=18402 iplen=56 ]
+SENT (10.6381s) ICMP [8.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=57442 seq=11] IP [ttl=11 id=38837 iplen=28 ]
+RCVD (10.8333s) ICMP [179.24.19.2 > 8.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=55 id=55435 iplen=56 ]
+SENT (11.6381s) ICMP [8.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=57442 seq=12] IP [ttl=12 id=38837 iplen=28 ]
+RCVD (11.8333s) ICMP [15.0.10.1 > 8.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=54 id=61470 iplen=56 ]
+SENT (12.6382s) ICMP [8.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=57442 seq=13] IP [ttl=13 id=38837 iplen=28 ]
+RCVD (12.8333s) ICMP [15.0.8.1 > 8.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=53 id=58529 iplen=56 ]
+SENT (13.6382s) ICMP [8.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=57442 seq=14] IP [ttl=14 id=38837 iplen=28 ]
+RCVD (13.8333s) ICMP [5.0.12.2 > 8.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=55 id=34713 iplen=56 ]
+SENT (14.6382s) ICMP [8.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=57442 seq=15] IP [ttl=15 id=38837 iplen=28 ]
+RCVD (14.8338s) ICMP [179.24.30.5 > 8.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=56 id=48847 iplen=56 ]
+SENT (15.6382s) ICMP [8.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=57442 seq=15] IP [ttl=15 id=38837 iplen=28 ]
+RCVD (15.8333s) ICMP [179.24.30.5 > 8.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=56 id=48851 iplen=56 ]
+^C 
+Max rtt: 196.410ms | Min rtt: 194.920ms | Avg rtt: 195.242ms
+Raw packets sent: 15 (630B) | Rcvd: 15 (840B) | Lost: 0 (0.00%)
+Nping done: 1 IP address pinged in 16.25 seconds
+root@main:~# 
+root@main:~# nping --dest-mac fa:5e:64:73:75:5c --interface g9 --source-ip 9.0.199.2 --dest-ip 4.5.5.5 -v0 --tr
+
+Starting Nping 0.6.40 ( http://nmap.org/nping ) at 2016-12-10 06:57 CET
+SENT (1.6427s) ICMP [9.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=64064 seq=1] IP [ttl=1 id=54543 iplen=28 ]
+RCVD (1.8397s) ICMP [9.0.199.1 > 9.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=64 id=58432 iplen=56 ]
+SENT (2.6439s) ICMP [9.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=64064 seq=3] IP [ttl=3 id=54543 iplen=28 ]
+RCVD (2.8397s) ICMP [9.0.5.1 > 9.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=62 id=4749 iplen=56 ]
+SENT (3.6439s) ICMP [9.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=64064 seq=4] IP [ttl=4 id=54543 iplen=28 ]
+RCVD (3.8397s) ICMP [179.24.3.1 > 9.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=61 id=4951 iplen=56 ]
+SENT (4.6439s) ICMP [9.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=64064 seq=5] IP [ttl=5 id=54543 iplen=28 ]
+RCVD (4.8397s) ICMP [15.0.1.2 > 9.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=60 id=23813 iplen=56 ]
+SENT (5.6440s) ICMP [9.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=64064 seq=6] IP [ttl=6 id=54543 iplen=28 ]
+RCVD (5.8397s) ICMP [15.0.6.2 > 9.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=59 id=51264 iplen=56 ]
+SENT (6.6440s) ICMP [9.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=64064 seq=7] IP [ttl=7 id=54543 iplen=28 ]
+RCVD (6.8403s) ICMP [5.0.12.2 > 9.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=55 id=55914 iplen=56 ]
+SENT (7.6440s) ICMP [9.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=64064 seq=8] IP [ttl=8 id=54543 iplen=28 ]
+RCVD (7.8397s) ICMP [5.0.9.2 > 9.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=56 id=58749 iplen=56 ]
+SENT (8.6441s) ICMP [9.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=64064 seq=9] IP [ttl=9 id=54543 iplen=28 ]
+RCVD (8.8397s) ICMP [5.0.12.2 > 9.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=55 id=55953 iplen=56 ]
+SENT (9.6441s) ICMP [9.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=64064 seq=10] IP [ttl=10 id=54543 iplen=28 ]
+RCVD (9.8397s) ICMP [5.0.9.2 > 9.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=56 id=59068 iplen=56 ]
+^C 
+Max rtt: 196.505ms | Min rtt: 195.490ms | Avg rtt: 195.753ms
+Raw packets sent: 9 (378B) | Rcvd: 9 (504B) | Lost: 0 (0.00%)
+Nping done: 1 IP address pinged in 10.37 seconds
+root@main:~# 
+root@main:~# nping --dest-mac ea:ed:1d:f7:3a:fa --interface g10 --source-ip 10.0.199.2 --dest-ip 4.5.5.5 -v0 --tr
+
+Starting Nping 0.6.40 ( http://nmap.org/nping ) at 2016-12-10 06:58 CET
+SENT (1.6375s) ICMP [10.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=16543 seq=1] IP [ttl=1 id=24133 iplen=28 ]
+RCVD (1.8345s) ICMP [10.0.199.1 > 10.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=64 id=23376 iplen=56 ]
+SENT (2.6387s) ICMP [10.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=16543 seq=3] IP [ttl=3 id=24133 iplen=28 ]
+RCVD (2.8345s) ICMP [10.0.5.1 > 10.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=62 id=41715 iplen=56 ]
+SENT (3.6388s) ICMP [10.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=16543 seq=4] IP [ttl=4 id=24133 iplen=28 ]
+RCVD (3.8345s) ICMP [10.0.4.1 > 10.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=61 id=13914 iplen=56 ]
+SENT (4.6388s) ICMP [10.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=16543 seq=5] IP [ttl=5 id=24133 iplen=28 ]
+RCVD (4.8345s) ICMP [179.24.19.2 > 10.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=60 id=11878 iplen=56 ]
+SENT (5.6388s) ICMP [10.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=16543 seq=6] IP [ttl=6 id=24133 iplen=28 ]
+RCVD (5.8345s) ICMP [15.0.10.1 > 10.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=59 id=63386 iplen=56 ]
+SENT (6.6389s) ICMP [10.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=16543 seq=7] IP [ttl=7 id=24133 iplen=28 ]
+RCVD (6.8345s) ICMP [15.0.8.1 > 10.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=58 id=35705 iplen=56 ]
+SENT (7.6389s) ICMP [10.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=16543 seq=8] IP [ttl=8 id=24133 iplen=28 ]
+RCVD (7.8346s) ICMP [5.0.12.2 > 10.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=60 id=44544 iplen=56 ]
+SENT (8.6390s) ICMP [10.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=16543 seq=8] IP [ttl=8 id=24133 iplen=28 ]
+RCVD (8.8345s) ICMP [5.0.12.2 > 10.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=60 id=44662 iplen=56 ]
+SENT (9.6392s) ICMP [10.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=16543 seq=9] IP [ttl=9 id=24133 iplen=28 ]
+RCVD (9.8345s) ICMP [179.24.30.5 > 10.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=61 id=21095 iplen=56 ]
+SENT (10.6395s) ICMP [10.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=16543 seq=11] IP [ttl=11 id=24133 iplen=28 ]
+RCVD (10.8345s) ICMP [179.24.30.5 > 10.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=61 id=21105 iplen=56 ]
+^C 
+Max rtt: 196.550ms | Min rtt: 194.169ms | Avg rtt: 195.479ms
+Raw packets sent: 10 (420B) | Rcvd: 10 (560B) | Lost: 0 (0.00%)
+Nping done: 1 IP address pinged in 11.08 seconds
+root@main:~# 
+root@main:~# nping --dest-mac be:e8:49:4e:cf:89 --interface g11 --source-ip 11.0.199.2 --dest-ip 4.5.5.5 -v0 --tr
+
+Starting Nping 0.6.40 ( http://nmap.org/nping ) at 2016-12-10 06:59 CET
+SENT (1.6603s) ICMP [11.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=55846 seq=1] IP [ttl=1 id=47968 iplen=28 ]
+RCVD (1.8574s) ICMP [11.0.199.1 > 11.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=64 id=33713 iplen=56 ]
+SENT (2.6620s) ICMP [11.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=55846 seq=3] IP [ttl=3 id=47968 iplen=28 ]
+RCVD (2.8574s) ICMP [11.0.13.2 > 11.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=62 id=5258 iplen=56 ]
+SENT (3.6621s) ICMP [11.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=55846 seq=4] IP [ttl=4 id=47968 iplen=28 ]
+RCVD (3.8574s) ICMP [4.0.6.2 > 11.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=53 id=5170 iplen=56 ]
+SENT (4.6621s) ICMP [11.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=55846 seq=5] IP [ttl=5 id=47968 iplen=28 ]
+RCVD (4.8574s) ICMP [4.0.2.2 > 11.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=54 id=32198 iplen=56 ]
+SENT (5.6621s) ICMP [11.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=55846 seq=6] IP [ttl=6 id=47968 iplen=28 ]
+RCVD (5.8574s) ICMP [4.0.4.1 > 11.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=54 id=57625 iplen=56 ]
+SENT (6.6622s) ICMP [11.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=55846 seq=7] IP [ttl=7 id=47968 iplen=28 ]
+RCVD (6.8574s) ICMP [15.0.2.1 > 11.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=54 id=56735 iplen=56 ]
+SENT (7.6622s) ICMP [11.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=55846 seq=8] IP [ttl=8 id=47968 iplen=28 ]
+RCVD (7.8574s) ICMP [15.0.6.1 > 11.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=55 id=43724 iplen=56 ]
+SENT (8.6622s) ICMP [11.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=55846 seq=9] IP [ttl=9 id=47968 iplen=28 ]
+RCVD (8.8574s) ICMP [15.0.9.1 > 11.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=56 id=11029 iplen=56 ]
+SENT (9.6623s) ICMP [11.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=55846 seq=10] IP [ttl=10 id=47968 iplen=28 ]
+RCVD (9.8574s) ICMP [5.0.13.2 > 11.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=57 id=64502 iplen=56 ]
+SENT (10.6623s) ICMP [11.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=55846 seq=11] IP [ttl=11 id=47968 iplen=28 ]
+RCVD (10.8574s) ICMP [5.0.9.2 > 11.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=57 id=20774 iplen=56 ]
+SENT (11.6623s) ICMP [11.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=55846 seq=12] IP [ttl=12 id=47968 iplen=28 ]
+RCVD (11.8574s) ICMP [5.0.13.2 > 11.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=57 id=64610 iplen=56 ]
+SENT (12.6623s) ICMP [11.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=55846 seq=13] IP [ttl=13 id=47968 iplen=28 ]
+RCVD (12.8574s) ICMP [5.0.9.2 > 11.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=57 id=20807 iplen=56 ]
+^C 
+Max rtt: 196.654ms | Min rtt: 194.927ms | Avg rtt: 195.212ms
+Raw packets sent: 12 (504B) | Rcvd: 12 (672B) | Lost: 0 (0.00%)
+Nping done: 1 IP address pinged in 12.99 seconds
+root@main:~# 
+root@main:~# nping --dest-mac 9e:24:10:1f:a0:53 --interface g12 --source-ip 12.0.199.2 --dest-ip 4.5.5.5 -v0 --tr
+
+Starting Nping 0.6.40 ( http://nmap.org/nping ) at 2016-12-10 07:01 CET
+SENT (1.6372s) ICMP [12.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=61486 seq=1] IP [ttl=1 id=36919 iplen=28 ]
+RCVD (1.8344s) ICMP [12.0.199.1 > 12.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=64 id=11806 iplen=56 ]
+SENT (2.6391s) ICMP [12.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=61486 seq=2] IP [ttl=2 id=36919 iplen=28 ]
+RCVD (2.8362s) ICMP [12.0.8.1 > 12.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=63 id=64441 iplen=56 ]
+SENT (3.6393s) ICMP [12.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=61486 seq=4] IP [ttl=4 id=36919 iplen=28 ]
+RCVD (3.8344s) ICMP [179.24.12.2 > 12.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=61 id=63903 iplen=56 ]
+SENT (4.6394s) ICMP [12.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=61486 seq=5] IP [ttl=5 id=36919 iplen=28 ]
+RCVD (4.8344s) ICMP [15.0.12.1 > 12.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=60 id=52699 iplen=56 ]
+SENT (5.6394s) ICMP [12.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=61486 seq=6] IP [ttl=6 id=36919 iplen=28 ]
+RCVD (5.8344s) ICMP [15.0.9.1 > 12.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=59 id=18878 iplen=56 ]
+SENT (6.6394s) ICMP [12.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=61486 seq=7] IP [ttl=7 id=36919 iplen=28 ]
+RCVD (6.8344s) ICMP [179.24.18.5 > 12.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=58 id=50060 iplen=56 ]
+SENT (7.6395s) ICMP [12.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=61486 seq=8] IP [ttl=8 id=36919 iplen=28 ]
+RCVD (7.8344s) ICMP [5.0.12.1 > 12.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=57 id=61659 iplen=56 ]
+SENT (8.6396s) ICMP [12.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=61486 seq=8] IP [ttl=8 id=36919 iplen=28 ]
+RCVD (8.8344s) ICMP [5.0.12.1 > 12.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=57 id=61895 iplen=56 ]
+SENT (9.6398s) ICMP [12.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=61486 seq=10] IP [ttl=10 id=36919 iplen=28 ]
+RCVD (9.8352s) ICMP [5.0.12.1 > 12.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=57 id=62030 iplen=56 ]
+SENT (10.6398s) ICMP [12.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=61486 seq=11] IP [ttl=11 id=36919 iplen=28 ]
+RCVD (10.8344s) ICMP [179.24.18.5 > 12.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=58 id=50186 iplen=56 ]
+SENT (11.6398s) ICMP [12.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=61486 seq=12] IP [ttl=12 id=36919 iplen=28 ]
+RCVD (11.8344s) ICMP [5.0.12.1 > 12.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=57 id=62448 iplen=56 ]
+SENT (12.6403s) ICMP [12.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=61486 seq=12] IP [ttl=12 id=36919 iplen=28 ]
+RCVD (12.8344s) ICMP [5.0.12.1 > 12.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=57 id=62545 iplen=56 ]
+SENT (13.6406s) ICMP [12.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=61486 seq=14] IP [ttl=14 id=36919 iplen=28 ]
+RCVD (13.8344s) ICMP [5.0.12.1 > 12.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=57 id=62619 iplen=56 ]
+SENT (14.6406s) ICMP [12.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=61486 seq=15] IP [ttl=15 id=36919 iplen=28 ]
+RCVD (14.8344s) ICMP [179.24.18.5 > 12.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=58 id=51142 iplen=56 ]
+SENT (15.6406s) ICMP [12.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=61486 seq=16] IP [ttl=16 id=36919 iplen=28 ]
+RCVD (15.8344s) ICMP [5.0.12.1 > 12.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=57 id=62695 iplen=56 ]
+SENT (16.6407s) ICMP [12.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=61486 seq=17] IP [ttl=17 id=36919 iplen=28 ]
+RCVD (16.8344s) ICMP [179.24.18.5 > 12.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=58 id=51315 iplen=56 ]
+^C 
+Max rtt: 196.972ms | Min rtt: 193.658ms | Avg rtt: 194.759ms
+Raw packets sent: 16 (672B) | Rcvd: 16 (896B) | Lost: 0 (0.00%)
+Nping done: 1 IP address pinged in 16.84 seconds
+root@main:~# 
+root@main:~# nping --dest-mac 4a:58:20:7b:6d:01 --interface g13 --source-ip 13.0.199.2 --dest-ip 4.5.5.5 -v0 --tr
+
+Starting Nping 0.6.40 ( http://nmap.org/nping ) at 2016-12-10 07:07 CET
+SENT (1.6428s) ICMP [13.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=26070 seq=1] IP [ttl=1 id=50826 iplen=28 ]
+RCVD (1.8404s) ICMP [13.0.199.1 > 13.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=64 id=9803 iplen=56 ]
+SENT (2.6447s) ICMP [13.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=26070 seq=3] IP [ttl=3 id=50826 iplen=28 ]
+RCVD (2.8404s) ICMP [13.0.13.2 > 13.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=62 id=31651 iplen=56 ]
+SENT (3.6447s) ICMP [13.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=26070 seq=4] IP [ttl=4 id=50826 iplen=28 ]
+RCVD (3.8404s) ICMP [179.24.28.1 > 13.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=61 id=56418 iplen=56 ]
+SENT (4.6448s) ICMP [13.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=26070 seq=5] IP [ttl=5 id=50826 iplen=28 ]
+RCVD (4.8404s) ICMP [11.0.9.2 > 13.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=60 id=285 iplen=56 ]
+SENT (5.6449s) ICMP [13.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=26070 seq=5] IP [ttl=5 id=50826 iplen=28 ]
+RCVD (5.8404s) ICMP [11.0.9.2 > 13.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=60 id=502 iplen=56 ]
+SENT (6.6455s) ICMP [13.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=26070 seq=6] IP [ttl=6 id=50826 iplen=28 ]
+RCVD (6.8404s) ICMP [11.0.12.2 > 13.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=59 id=6658 iplen=56 ]
+SENT (7.6457s) ICMP [13.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=26070 seq=8] IP [ttl=8 id=50826 iplen=28 ]
+RCVD (7.8412s) ICMP [4.0.6.1 > 13.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=57 id=60971 iplen=56 ]
+SENT (8.6457s) ICMP [13.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=26070 seq=9] IP [ttl=9 id=50826 iplen=28 ]
+RCVD (8.8404s) ICMP [4.0.1.1 > 13.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=56 id=54073 iplen=56 ]
+SENT (9.6458s) ICMP [13.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=26070 seq=10] IP [ttl=10 id=50826 iplen=28 ]
+RCVD (9.8404s) ICMP [15.0.2.1 > 13.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=52 id=34670 iplen=56 ]
+SENT (10.6458s) ICMP [13.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=26070 seq=11] IP [ttl=11 id=50826 iplen=28 ]
+RCVD (10.8404s) ICMP [15.0.6.1 > 13.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=53 id=10115 iplen=56 ]
+SENT (11.6458s) ICMP [13.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=26070 seq=12] IP [ttl=12 id=50826 iplen=28 ]
+RCVD (11.8404s) ICMP [15.0.9.1 > 13.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=54 id=47208 iplen=56 ]
+SENT (12.6459s) ICMP [13.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=26070 seq=13] IP [ttl=13 id=50826 iplen=28 ]
+RCVD (12.8404s) ICMP [5.0.13.2 > 13.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=55 id=15269 iplen=56 ]
+SENT (13.6459s) ICMP [13.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=26070 seq=14] IP [ttl=14 id=50826 iplen=28 ]
+RCVD (13.8404s) ICMP [5.0.9.2 > 13.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=55 id=43964 iplen=56 ]
+^C 
+Max rtt: 196.879ms | Min rtt: 194.378ms | Avg rtt: 195.006ms
+Raw packets sent: 13 (546B) | Rcvd: 13 (728B) | Lost: 0 (0.00%)
+Nping done: 1 IP address pinged in 14.20 seconds
+root@main:~# 
+root@main:~# nping --dest-mac 42:4f:e4:ec:75:c0 --interface g14 --source-ip 14.0.199.2 --dest-ip 4.5.5.5 -v0 --tr
+
+Starting Nping 0.6.40 ( http://nmap.org/nping ) at 2016-12-10 07:08 CET
+SENT (1.6396s) ICMP [14.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=7085 seq=1] IP [ttl=1 id=26382 iplen=28 ]
+RCVD (1.8374s) ICMP [14.0.199.1 > 14.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=64 id=51639 iplen=56 ]
+SENT (2.6402s) ICMP [14.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=7085 seq=3] IP [ttl=3 id=26382 iplen=28 ]
+RCVD (2.8374s) ICMP [14.0.5.1 > 14.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=62 id=23547 iplen=56 ]
+SENT (3.6449s) ICMP [14.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=7085 seq=3] IP [ttl=3 id=26382 iplen=28 ]
+RCVD (3.8374s) ICMP [14.0.5.1 > 14.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=62 id=23642 iplen=56 ]
+SENT (4.6456s) ICMP [14.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=7085 seq=5] IP [ttl=5 id=26382 iplen=28 ]
+RCVD (4.8374s) ICMP [179.24.29.1 > 14.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=60 id=58872 iplen=56 ]
+SENT (5.6457s) ICMP [14.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=7085 seq=5] IP [ttl=5 id=26382 iplen=28 ]
+RCVD (5.8374s) ICMP [179.24.29.1 > 14.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=60 id=58991 iplen=56 ]
+SENT (6.6463s) ICMP [14.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=7085 seq=6] IP [ttl=6 id=26382 iplen=28 ]
+RCVD (6.8374s) ICMP [11.0.13.2 > 14.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=59 id=3103 iplen=56 ]
+SENT (7.6467s) ICMP [14.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=7085 seq=7] IP [ttl=7 id=26382 iplen=28 ]
+RCVD (7.8374s) ICMP [4.0.8.1 > 14.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=56 id=50564 iplen=56 ]
+SENT (8.6469s) ICMP [14.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=7085 seq=8] IP [ttl=8 id=26382 iplen=28 ]
+RCVD (8.8374s) ICMP [4.0.6.1 > 14.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=55 id=64568 iplen=56 ]
+SENT (9.6471s) ICMP [14.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=7085 seq=9] IP [ttl=9 id=26382 iplen=28 ]
+RCVD (9.8374s) ICMP [4.0.4.1 > 14.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=54 id=61527 iplen=56 ]
+SENT (10.6472s) ICMP [14.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=7085 seq=10] IP [ttl=10 id=26382 iplen=28 ]
+RCVD (10.8374s) ICMP [15.0.2.1 > 14.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=56 id=33138 iplen=56 ]
+SENT (11.6474s) ICMP [14.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=7085 seq=11] IP [ttl=11 id=26382 iplen=28 ]
+RCVD (11.8382s) ICMP [15.0.6.1 > 14.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=57 id=11156 iplen=56 ]
+SENT (12.6485s) ICMP [14.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=7085 seq=12] IP [ttl=12 id=26382 iplen=28 ]
+RCVD (12.8374s) ICMP [179.24.18.1 > 14.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=58 id=27878 iplen=56 ]
+SENT (13.6487s) ICMP [14.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=7085 seq=13] IP [ttl=13 id=26382 iplen=28 ]
+RCVD (13.8374s) ICMP [5.0.12.2 > 14.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=59 id=49305 iplen=56 ]
+SENT (14.6489s) ICMP [14.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=7085 seq=14] IP [ttl=14 id=26382 iplen=28 ]
+RCVD (14.8374s) ICMP [5.0.9.2 > 14.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=60 id=3408 iplen=56 ]
+^C 
+Max rtt: 197.729ms | Min rtt: 188.404ms | Avg rtt: 191.368ms
+Raw packets sent: 14 (588B) | Rcvd: 14 (784B) | Lost: 0 (0.00%)
+Nping done: 1 IP address pinged in 15.02 seconds
+root@main:~# 
+root@main:~# nping --dest-mac 26:c9:b3:6c:cd:4a --interface g15 --source-ip 15.0.199.2 --dest-ip 4.5.5.5 -v0 --tr
+
+Starting Nping 0.6.40 ( http://nmap.org/nping ) at 2016-12-10 07:09 CET
+SENT (1.6419s) ICMP [15.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=27285 seq=1] IP [ttl=1 id=32138 iplen=28 ]
+RCVD (1.8390s) ICMP [15.0.199.1 > 15.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=64 id=42627 iplen=56 ]
+SENT (2.6430s) ICMP [15.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=27285 seq=3] IP [ttl=3 id=32138 iplen=28 ]
+RCVD (2.8390s) ICMP [179.24.18.5 > 15.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=62 id=30149 iplen=56 ]
+SENT (3.6430s) ICMP [15.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=27285 seq=4] IP [ttl=4 id=32138 iplen=28 ]
+RCVD (3.8390s) ICMP [5.0.12.1 > 15.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=61 id=35383 iplen=56 ]
+SENT (4.6431s) ICMP [15.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=27285 seq=4] IP [ttl=4 id=32138 iplen=28 ]
+RCVD (4.8390s) ICMP [5.0.12.1 > 15.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=61 id=35558 iplen=56 ]
+SENT (5.6437s) ICMP [15.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=27285 seq=6] IP [ttl=6 id=32138 iplen=28 ]
+RCVD (5.8390s) ICMP [5.0.12.1 > 15.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=61 id=35670 iplen=56 ]
+^C 
+Max rtt: 196.643ms | Min rtt: 195.257ms | Avg rtt: 195.913ms
+Raw packets sent: 5 (210B) | Rcvd: 5 (280B) | Lost: 0 (0.00%)
+Nping done: 1 IP address pinged in 6.20 seconds
+root@main:~# 
+root@main:~# nping --dest-mac 82:ac:7b:ff:4f:3d --interface g16 --source-ip 16.0.199.2 --dest-ip 4.5.5.5 -v0 --tr
+
+Starting Nping 0.6.40 ( http://nmap.org/nping ) at 2016-12-10 07:10 CET
+SENT (1.6402s) ICMP [16.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=64694 seq=1] IP [ttl=1 id=23073 iplen=28 ]
+RCVD (1.8373s) ICMP [16.0.199.1 > 16.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=64 id=62307 iplen=56 ]
+SENT (2.6413s) ICMP [16.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=64694 seq=2] IP [ttl=2 id=23073 iplen=28 ]
+RCVD (2.8373s) ICMP [16.0.10.2 > 16.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=63 id=2855 iplen=56 ]
+SENT (3.6421s) ICMP [16.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=64694 seq=4] IP [ttl=4 id=23073 iplen=28 ]
+RCVD (3.8413s) ICMP [179.24.43.1 > 16.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=61 id=33129 iplen=56 ]
+SENT (4.6421s) ICMP [16.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=64694 seq=5] IP [ttl=5 id=23073 iplen=28 ]
+RCVD (4.8413s) ICMP [13.0.9.2 > 16.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=60 id=1335 iplen=56 ]
+SENT (5.6421s) ICMP [16.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=64694 seq=6] IP [ttl=6 id=23073 iplen=28 ]
+RCVD (5.8413s) ICMP [13.0.12.2 > 16.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=59 id=18160 iplen=56 ]
+SENT (6.6422s) ICMP [16.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=64694 seq=7] IP [ttl=7 id=23073 iplen=28 ]
+RCVD (6.8413s) ICMP [179.24.28.1 > 16.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=58 id=55780 iplen=56 ]
+SENT (7.6422s) ICMP [16.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=64694 seq=8] IP [ttl=8 id=23073 iplen=28 ]
+RCVD (7.8413s) ICMP [11.0.9.2 > 16.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=57 id=41202 iplen=56 ]
+SENT (8.6422s) ICMP [16.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=64694 seq=9] IP [ttl=9 id=23073 iplen=28 ]
+RCVD (8.8413s) ICMP [11.0.12.2 > 16.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=56 id=46359 iplen=56 ]
+SENT (9.6423s) ICMP [16.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=64694 seq=10] IP [ttl=10 id=23073 iplen=28 ]
+RCVD (9.8413s) ICMP [179.24.16.1 > 16.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=55 id=26882 iplen=56 ]
+SENT (10.6423s) ICMP [16.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=64694 seq=11] IP [ttl=11 id=23073 iplen=28 ]
+RCVD (10.8413s) ICMP [4.0.6.1 > 16.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=54 id=41803 iplen=56 ]
+SENT (11.6423s) ICMP [16.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=64694 seq=12] IP [ttl=12 id=23073 iplen=28 ]
+RCVD (11.8413s) ICMP [4.0.1.1 > 16.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=53 id=38439 iplen=56 ]
+SENT (12.6423s) ICMP [16.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=64694 seq=13] IP [ttl=13 id=23073 iplen=28 ]
+RCVD (12.8413s) ICMP [15.0.2.1 > 16.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=48 id=5814 iplen=56 ]
+SENT (13.6424s) ICMP [16.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=64694 seq=13] IP [ttl=13 id=23073 iplen=28 ]
+RCVD (13.8421s) ICMP [15.0.2.1 > 16.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=48 id=5943 iplen=56 ]
+SENT (14.6432s) ICMP [16.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=64694 seq=14] IP [ttl=14 id=23073 iplen=28 ]
+RCVD (14.8413s) ICMP [15.0.6.1 > 16.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=49 id=13291 iplen=56 ]
+SENT (15.6438s) ICMP [16.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=64694 seq=16] IP [ttl=16 id=23073 iplen=28 ]
+RCVD (15.8413s) ICMP [5.0.13.2 > 16.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=52 id=44182 iplen=56 ]
+SENT (16.6438s) ICMP [16.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=64694 seq=17] IP [ttl=17 id=23073 iplen=28 ]
+RCVD (16.8413s) ICMP [5.0.9.2 > 16.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=52 id=40544 iplen=56 ]
+^C 
+Max rtt: 199.544ms | Min rtt: 195.886ms | Avg rtt: 198.432ms
+Raw packets sent: 16 (672B) | Rcvd: 16 (896B) | Lost: 0 (0.00%)
+Nping done: 1 IP address pinged in 17.53 seconds
+root@main:~# nping --dest-mac 0e:3d:7f:b9:9e:ed --interface g17 --source-ip 17.0.199.2 --dest-ip 4.5.5.5 -v0 --tr
+
+Starting Nping 0.6.40 ( http://nmap.org/nping ) at 2016-12-10 07:11 CET
+SENT (1.6373s) ICMP [17.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=48288 seq=1] IP [ttl=1 id=57069 iplen=28 ]
+RCVD (1.8340s) ICMP [17.0.199.1 > 17.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=64 id=24100 iplen=56 ]
+SENT (2.6388s) ICMP [17.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=48288 seq=3] IP [ttl=3 id=57069 iplen=28 ]
+RCVD (2.8340s) ICMP [17.0.13.2 > 17.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=62 id=63493 iplen=56 ]
+SENT (3.6389s) ICMP [17.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=48288 seq=3] IP [ttl=3 id=57069 iplen=28 ]
+RCVD (3.8340s) ICMP [17.0.13.2 > 17.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=62 id=63731 iplen=56 ]
+SENT (4.6397s) ICMP [17.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=48288 seq=5] IP [ttl=5 id=57069 iplen=28 ]
+RCVD (4.8340s) ICMP [14.0.6.1 > 17.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=60 id=56592 iplen=56 ]
+SENT (5.6398s) ICMP [17.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=48288 seq=6] IP [ttl=6 id=57069 iplen=28 ]
+RCVD (5.8340s) ICMP [14.0.1.1 > 17.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=59 id=43758 iplen=56 ]
+SENT (6.6398s) ICMP [17.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=48288 seq=7] IP [ttl=7 id=57069 iplen=28 ]
+RCVD (6.8341s) ICMP [179.24.29.1 > 17.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=58 id=25046 iplen=56 ]
+SENT (7.6398s) ICMP [17.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=48288 seq=8] IP [ttl=8 id=57069 iplen=28 ]
+RCVD (7.8340s) ICMP [11.0.13.2 > 17.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=57 id=24283 iplen=56 ]
+SENT (8.6399s) ICMP [17.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=48288 seq=8] IP [ttl=8 id=57069 iplen=28 ]
+RCVD (8.8340s) ICMP [11.0.13.2 > 17.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=57 id=24499 iplen=56 ]
+SENT (9.6405s) ICMP [17.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=48288 seq=10] IP [ttl=10 id=57069 iplen=28 ]
+RCVD (9.8340s) ICMP [4.0.6.1 > 17.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=52 id=40614 iplen=56 ]
+SENT (10.6409s) ICMP [17.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=48288 seq=10] IP [ttl=10 id=57069 iplen=28 ]
+RCVD (10.8364s) ICMP [4.0.6.1 > 17.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=52 id=40765 iplen=56 ]
+SENT (11.6415s) ICMP [17.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=48288 seq=12] IP [ttl=12 id=57069 iplen=28 ]
+RCVD (11.8340s) ICMP [15.0.2.1 > 17.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=53 id=34659 iplen=56 ]
+SENT (12.6415s) ICMP [17.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=48288 seq=13] IP [ttl=13 id=57069 iplen=28 ]
+RCVD (12.8340s) ICMP [15.0.6.1 > 17.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=54 id=30614 iplen=56 ]
+SENT (13.6415s) ICMP [17.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=48288 seq=14] IP [ttl=14 id=57069 iplen=28 ]
+RCVD (13.8340s) ICMP [179.24.18.1 > 17.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=55 id=44116 iplen=56 ]
+SENT (14.6416s) ICMP [17.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=48288 seq=15] IP [ttl=15 id=57069 iplen=28 ]
+RCVD (14.8340s) ICMP [5.0.12.2 > 17.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=56 id=8177 iplen=56 ]
+SENT (15.6416s) ICMP [17.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=48288 seq=15] IP [ttl=15 id=57069 iplen=28 ]
+RCVD (15.8340s) ICMP [5.0.12.2 > 17.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=56 id=8235 iplen=56 ]
+SENT (16.6429s) ICMP [17.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=48288 seq=16] IP [ttl=16 id=57069 iplen=28 ]
+RCVD (16.8340s) ICMP [5.0.9.2 > 17.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=57 id=49320 iplen=56 ]
+^C 
+Max rtt: 196.258ms | Min rtt: 190.950ms | Avg rtt: 193.626ms
+Raw packets sent: 16 (672B) | Rcvd: 16 (896B) | Lost: 0 (0.00%)
+Nping done: 1 IP address pinged in 16.98 seconds
+root@main:~# nping --dest-mac 4a:b8:73:67:87:45 --interface g18 --source-ip 18.0.199.2 --dest-ip 4.5.5.5 -v0 --tr
+
+Starting Nping 0.6.40 ( http://nmap.org/nping ) at 2016-12-10 07:12 CET
+SENT (1.6412s) ICMP [18.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=31140 seq=1] IP [ttl=1 id=40993 iplen=28 ]
+RCVD (1.8385s) ICMP [18.0.199.1 > 18.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=64 id=828 iplen=56 ]
+SENT (2.6423s) ICMP [18.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=31140 seq=2] IP [ttl=2 id=40993 iplen=28 ]
+RCVD (2.8385s) ICMP [18.0.7.1 > 18.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=63 id=21996 iplen=56 ]
+SENT (3.6425s) ICMP [18.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=31140 seq=4] IP [ttl=4 id=40993 iplen=28 ]
+RCVD (3.8385s) ICMP [18.0.4.1 > 18.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=61 id=8860 iplen=56 ]
+SENT (4.6425s) ICMP [18.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=31140 seq=5] IP [ttl=5 id=40993 iplen=28 ]
+RCVD (4.8385s) ICMP [179.24.10.2 > 18.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=60 id=39966 iplen=56 ]
+SENT (5.6426s) ICMP [18.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=31140 seq=6] IP [ttl=6 id=40993 iplen=28 ]
+RCVD (5.8385s) ICMP [3.0.13.2 > 18.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=59 id=2843 iplen=56 ]
+SENT (6.6430s) ICMP [18.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=31140 seq=6] IP [ttl=6 id=40993 iplen=28 ]
+RCVD (6.8385s) ICMP [3.0.13.2 > 18.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=59 id=2944 iplen=56 ]
+SENT (7.6436s) ICMP [18.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=31140 seq=8] IP [ttl=8 id=40993 iplen=28 ]
+RCVD (7.8385s) ICMP [15.0.9.1 > 18.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=57 id=6024 iplen=56 ]
+SENT (8.6436s) ICMP [18.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=31140 seq=8] IP [ttl=8 id=40993 iplen=28 ]
+RCVD (8.8385s) ICMP [15.0.9.1 > 18.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=57 id=6167 iplen=56 ]
+SENT (9.6449s) ICMP [18.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=31140 seq=9] IP [ttl=9 id=40993 iplen=28 ]
+RCVD (9.8385s) ICMP [179.24.18.5 > 18.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=56 id=40978 iplen=56 ]
+SENT (10.6459s) ICMP [18.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=31140 seq=10] IP [ttl=10 id=40993 iplen=28 ]
+RCVD (10.8385s) ICMP [5.0.12.1 > 18.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=55 id=65424 iplen=56 ]
+SENT (11.6471s) ICMP [18.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=31140 seq=11] IP [ttl=11 id=40993 iplen=28 ]
+RCVD (11.8393s) ICMP [179.24.18.5 > 18.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=56 id=41360 iplen=56 ]
+^C 
+Max rtt: 196.902ms | Min rtt: 192.015ms | Avg rtt: 194.744ms
+Raw packets sent: 11 (462B) | Rcvd: 11 (616B) | Lost: 0 (0.00%)
+Nping done: 1 IP address pinged in 12.35 seconds
+root@main:~# nping --dest-mac 86:81:f5:7e:f8:79 --interface g19 --source-ip 19.0.199.2 --dest-ip 4.5.5.5 -v0 --tr
+
+Starting Nping 0.6.40 ( http://nmap.org/nping ) at 2016-12-10 07:17 CET
+SENT (1.6473s) ICMP [19.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=45403 seq=1] IP [ttl=1 id=11705 iplen=28 ]
+RCVD (1.8451s) ICMP [19.0.199.1 > 19.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=64 id=37555 iplen=56 ]
+SENT (2.6487s) ICMP [19.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=45403 seq=3] IP [ttl=3 id=11705 iplen=28 ]
+RCVD (2.8443s) ICMP [19.0.13.2 > 19.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=62 id=17850 iplen=56 ]
+SENT (3.6488s) ICMP [19.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=45403 seq=4] IP [ttl=4 id=11705 iplen=28 ]
+RCVD (3.8443s) ICMP [179.24.40.2 > 19.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=61 id=41568 iplen=56 ]
+SENT (4.6488s) ICMP [19.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=45403 seq=5] IP [ttl=5 id=11705 iplen=28 ]
+RCVD (4.8443s) ICMP [1.0.6.1 > 19.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=60 id=55622 iplen=56 ]
+SENT (5.6489s) ICMP [19.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=45403 seq=6] IP [ttl=6 id=11705 iplen=28 ]
+RCVD (5.8443s) ICMP [1.0.1.1 > 19.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=59 id=57473 iplen=56 ]
+SENT (6.6489s) ICMP [19.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=45403 seq=7] IP [ttl=7 id=11705 iplen=28 ]
+RCVD (6.8443s) ICMP [179.24.23.1 > 19.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=58 id=10294 iplen=56 ]
+SENT (7.6489s) ICMP [19.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=45403 seq=8] IP [ttl=8 id=11705 iplen=28 ]
+RCVD (7.8443s) ICMP [7.0.13.2 > 19.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=57 id=18142 iplen=56 ]
+SENT (8.6490s) ICMP [19.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=45403 seq=9] IP [ttl=9 id=11705 iplen=28 ]
+RCVD (8.8443s) ICMP [3.0.8.1 > 19.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=53 id=25656 iplen=56 ]
+SENT (9.6490s) ICMP [19.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=45403 seq=10] IP [ttl=10 id=11705 iplen=28 ]
+RCVD (9.8443s) ICMP [3.0.11.1 > 19.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=54 id=11933 iplen=56 ]
+SENT (10.6490s) ICMP [19.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=45403 seq=11] IP [ttl=11 id=11705 iplen=28 ]
+RCVD (10.8451s) ICMP [3.0.13.2 > 19.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=54 id=17122 iplen=56 ]
+SENT (11.6491s) ICMP [19.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=45403 seq=12] IP [ttl=12 id=11705 iplen=28 ]
+RCVD (11.8443s) ICMP [15.0.9.2 > 19.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=46 id=3677 iplen=56 ]
+SENT (12.6491s) ICMP [19.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=45403 seq=13] IP [ttl=13 id=11705 iplen=28 ]
+RCVD (12.8443s) ICMP [15.0.6.2 > 19.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=47 id=11616 iplen=56 ]
+SENT (13.6491s) ICMP [19.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=45403 seq=14] IP [ttl=14 id=11705 iplen=28 ]
+RCVD (13.8443s) ICMP [5.0.12.2 > 19.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=45 id=53629 iplen=56 ]
+SENT (14.6492s) ICMP [19.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=45403 seq=15] IP [ttl=15 id=11705 iplen=28 ]
+RCVD (14.8443s) ICMP [5.0.9.2 > 19.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=46 id=10395 iplen=56 ]
+SENT (15.6492s) ICMP [19.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=45403 seq=16] IP [ttl=16 id=11705 iplen=28 ]
+RCVD (15.8456s) ICMP [5.0.12.2 > 19.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=45 id=53679 iplen=56 ]
+^C 
+Max rtt: 197.263ms | Min rtt: 195.037ms | Avg rtt: 195.485ms
+Raw packets sent: 15 (630B) | Rcvd: 15 (840B) | Lost: 0 (0.00%)
+Nping done: 1 IP address pinged in 15.97 seconds
+root@main:~# nping --dest-mac 36:4d:72:10:73:88 --interface g20 --source-ip 20.0.199.2 --dest-ip 4.5.5.5 -v0 --tr
+
+Starting Nping 0.6.40 ( http://nmap.org/nping ) at 2016-12-10 07:22 CET
+SENT (1.6399s) ICMP [20.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=51507 seq=1] IP [ttl=1 id=3710 iplen=28 ]
+RCVD (1.8376s) ICMP [20.0.199.1 > 20.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=64 id=11641 iplen=56 ]
+SENT (2.6409s) ICMP [20.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=51507 seq=2] IP [ttl=2 id=3710 iplen=28 ]
+RCVD (2.8376s) ICMP [20.0.10.2 > 20.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=63 id=21586 iplen=56 ]
+SENT (3.6411s) ICMP [20.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=51507 seq=4] IP [ttl=4 id=3710 iplen=28 ]
+RCVD (3.8376s) ICMP [20.0.14.2 > 20.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=61 id=7822 iplen=56 ]
+SENT (4.6412s) ICMP [20.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=51507 seq=5] IP [ttl=5 id=3710 iplen=28 ]
+RCVD (4.8376s) ICMP [179.24.65.2 > 20.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=60 id=22306 iplen=56 ]
+SENT (5.6412s) ICMP [20.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=51507 seq=6] IP [ttl=6 id=3710 iplen=28 ]
+RCVD (5.8376s) ICMP [21.0.6.1 > 20.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=59 id=34973 iplen=56 ]
+SENT (6.6412s) ICMP [20.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=51507 seq=7] IP [ttl=7 id=3710 iplen=28 ]
+RCVD (6.8383s) ICMP [21.0.4.1 > 20.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=57 id=32016 iplen=56 ]
+SENT (7.6413s) ICMP [20.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=51507 seq=8] IP [ttl=8 id=3710 iplen=28 ]
+RCVD (7.8376s) ICMP [179.24.62.1 > 20.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=56 id=61260 iplen=56 ]
+SENT (8.6413s) ICMP [20.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=51507 seq=9] IP [ttl=9 id=3710 iplen=28 ]
+RCVD (8.8384s) ICMP [4.0.14.1 > 20.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=55 id=40954 iplen=56 ]
+SENT (9.6421s) ICMP [20.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=51507 seq=9] IP [ttl=9 id=3710 iplen=28 ]
+RCVD (9.8376s) ICMP [4.0.14.1 > 20.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=55 id=41141 iplen=56 ]
+SENT (10.6441s) ICMP [20.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=51507 seq=10] IP [ttl=10 id=3710 iplen=28 ]
+RCVD (10.8376s) ICMP [4.0.12.1 > 20.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=54 id=16094 iplen=56 ]
+SENT (11.6451s) ICMP [20.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=51507 seq=11] IP [ttl=11 id=3710 iplen=28 ]
+RCVD (11.8376s) ICMP [4.0.9.1 > 20.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=53 id=37328 iplen=56 ]
+SENT (12.6461s) ICMP [20.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=51507 seq=12] IP [ttl=12 id=3710 iplen=28 ]
+RCVD (12.8376s) ICMP [4.0.6.1 > 20.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=52 id=57859 iplen=56 ]
+SENT (13.6471s) ICMP [20.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=51507 seq=13] IP [ttl=13 id=3710 iplen=28 ]
+RCVD (13.8376s) ICMP [4.0.1.1 > 20.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=51 id=44542 iplen=56 ]
+SENT (14.6481s) ICMP [20.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=51507 seq=14] IP [ttl=14 id=3710 iplen=28 ]
+RCVD (14.8376s) ICMP [15.0.2.1 > 20.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=54 id=23190 iplen=56 ]
+SENT (15.6491s) ICMP [20.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=51507 seq=15] IP [ttl=15 id=3710 iplen=28 ]
+RCVD (15.8376s) ICMP [15.0.6.1 > 20.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=55 id=46794 iplen=56 ]
+SENT (16.6493s) ICMP [20.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=51507 seq=17] IP [ttl=17 id=3710 iplen=28 ]
+RCVD (16.8376s) ICMP [5.0.13.2 > 20.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=57 id=4279 iplen=56 ]
+SENT (17.6493s) ICMP [20.0.199.2 > 4.5.5.5 Echo request (type=8/code=0) id=51507 seq=18] IP [ttl=18 id=3710 iplen=28 ]
+RCVD (17.8376s) ICMP [5.0.12.1 > 20.0.199.2 TTL=0 during transit (type=11/code=0) ] IP [ttl=56 id=38562 iplen=56 ]
+^C 
+Max rtt: 197.588ms | Min rtt: 188.139ms | Avg rtt: 193.546ms
+Raw packets sent: 18 (756B) | Rcvd: 17 (952B) | Lost: 1 (5.56%)
+Nping done: 1 IP address pinged in 18.66 seconds
+root@main:~# 

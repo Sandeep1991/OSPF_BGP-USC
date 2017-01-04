@@ -1,0 +1,121 @@
+R5(config-router)#do sh run
+Building configuration...
+
+Current configuration : 1797 bytes
+!
+version 12.4
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname R5
+!
+boot-start-marker
+boot-end-marker
+!
+!
+no aaa new-model
+memory-size iomem 5
+no ip icmp rate-limit unreachable
+ip cef
+!
+!
+!
+!
+no ip domain lookup
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+archive
+ log config
+  hidekeys
+!
+!
+!
+!
+ip tcp synwait-time 5
+!
+!
+!
+interface Loopback0
+ ip address 5.5.5.5 255.255.255.0
+!
+interface FastEthernet0/0
+ ip address 10.1.25.5 255.255.255.0
+ duplex auto
+ speed auto
+!
+interface Serial0/0
+ ip address 10.1.54.5 255.255.255.0
+ clock rate 2000000
+!
+interface FastEthernet0/1
+ ip address 10.1.14.5 255.255.255.0
+ duplex auto
+ speed auto
+!
+interface Serial0/1
+ ip address 10.1.15.5 255.255.255.0
+ clock rate 2000000
+!
+interface FastEthernet1/0
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+!
+router bgp 5
+ no synchronization
+ bgp log-neighbor-changes
+ network 0.0.0.0
+ network 5.5.5.0 mask 255.255.255.0
+ network 10.0.0.0
+ neighbor 10.1.14.14 remote-as 14
+ neighbor 10.1.15.15 remote-as 15
+ neighbor 10.1.15.15 send-community
+ neighbor 10.1.15.15 route-map LOCAL_PREF_4 in
+ neighbor 10.1.25.2 remote-as 2
+ neighbor 10.1.54.4 remote-as 4
+ neighbor 10.1.54.4 send-community
+ neighbor 10.1.54.4 route-map LOCAL_PREF in
+ no auto-summary
+!
+ip forward-protocol nd
+!
+ip bgp-community new-format
+!
+no ip http server
+no ip http secure-server
+!
+access-list 101 permit ip host 4.4.4.4 host 15.15.15.15
+no cdp log mismatch duplex
+!
+!
+route-map LOCAL_PREF permit 10
+ match ip address 101
+!
+route-map LOCAL_PREF_4 deny 10
+ match ip address 102
+!
+!
+!
+control-plane
+!
+!
+line con 0
+ exec-timeout 0 0
+ privilege level 15
+ logging synchronous
+line aux 0
+ exec-timeout 0 0
+ privilege level 15
+ logging synchronous
+line vty 0 4
+ login
+!
+!
+end

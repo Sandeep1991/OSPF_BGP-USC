@@ -1,0 +1,33 @@
+!BGP
+
+
+
+!4.
+!For NEWY
+router bgp 5
+ bgp router-id 5.101.0.1
+ neighbor 5.102.0.2 remote-as 5
+ neighbor 5.102.0.2 update-source host
+ neighbor 5.102.0.2 next-hop-self
+ neighbor 5.103.0.2 remote-as 5
+ neighbor 5.103.0.2 update-source host
+ neighbor 5.103.0.2 next-hop-self
+ neighbor 5.104.0.2 remote-as 5
+ neighbor 5.104.0.2 update-source host
+ neighbor 5.104.0.2 next-hop-self
+ neighbor 5.105.0.2 remote-as 5
+ neighbor 5.105.0.2 update-source host
+ neighbor 5.105.0.2 next-hop-self
+ neighbor 5.106.0.2 remote-as 5
+ neighbor 5.106.0.2 update-source host
+ neighbor 5.106.0.2 next-hop-self
+ neighbor 5.107.0.2 remote-as 5
+ neighbor 5.107.0.2 update-source host
+ neighbor 5.107.0.2 next-hop-self
+ neighbor 5.108.0.2 remote-as 5
+ neighbor 5.108.0.2 update-source host
+ neighbor 5.108.0.2 next-hop-self
+ neighbor 5.109.0.2 remote-as 5
+ neighbor 5.109.0.2 update-source host
+ neighbor 5.109.0.2 next-hop-self
+!

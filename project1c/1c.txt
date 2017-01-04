@@ -1,0 +1,39 @@
+router bgp 5
+neighbor 10.1.13.1 remote-as 10
+neighbor 10.1.13.1 send-community
+neighbor 10.1.13.1 route-map peer R1-out
+
+
+
+on provider routers:
+R1
+router bgp 5
+ no synchronization
+ bgp log-neighbor-changes
+ neighbor 10.1.12.2 remote-as 5
+ neighbor 10.1.13.3 remote-as 30
+ neighbor 10.1.13.3 route-map peerR3 in
+ no auto-summary
+!
+ip forward-protocol nd
+!
+ip bgp-community new-format
+ip community-list 1 permit 100:300
+ip community-list 2 permit 100:250
+!
+no ip http server
+no ip http secure-server
+!
+no cdp log mismatch duplex
+!
+!
+route-map peerR3 permit 10
+ match community 1
+ set local-preference 130
+!
+route-map peerR3 permit 20
+ match community 2
+ set local-preference 125
+!
+route-map peerR3 permit 30
+!

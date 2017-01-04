@@ -1,0 +1,118 @@
+1 Before local preference was set on LOSA
+G5_LOSA(config)# do sh ip route
+Codes: K - kernel route, C - connected, S - static, R - RIP,
+       O - OSPF, I - IS-IS, B - BGP, A - Babel,
+       > - selected route, * - FIB route
+
+K>* 0.0.0.0/0 via 5.108.0.2, host
+B>* 1.0.0.0/8 [200/0] via 5.103.0.2 (recursive via 5.0.10.1, hous), 3d22h55m
+B>* 2.0.0.0/8 [20/0] via 179.24.32.1, ebgp_peer, 01w1d23h
+B>* 3.0.0.0/8 [200/0] via 5.109.0.2 (recursive via 5.0.13.2, seat), 00:55:12
+B>* 4.0.0.0/8 [200/0] via 5.101.0.2 (recursive via 5.0.10.1, hous), 01:05:03
+O>* 5.0.1.0/24 [110/60] via 5.0.13.2, seat, 01w1d23h
+  *                     via 5.0.10.1, hous, 01w1d23h
+O>* 5.0.2.0/24 [110/5030] via 5.0.10.1, hous, 01w1d23h
+O>* 5.0.3.0/24 [110/5020] via 5.0.10.1, hous, 01w1d23h
+O>* 5.0.4.0/24 [110/40] via 5.0.10.1, hous, 01w1d23h
+O>* 5.0.5.0/24 [110/30] via 5.0.10.1, hous, 01w1d23h
+O>* 5.0.6.0/24 [110/40] via 5.0.13.2, seat, 01w1d23h
+O>* 5.0.7.0/24 [110/20] via 5.0.10.1, hous, 01w1d23h
+O>* 5.0.8.0/24 [110/3010] via 5.0.10.1, hous, 01w1d23h
+O>* 5.0.9.0/24 [110/30] via 5.0.13.2, seat, 01w1d23h
+C>* 5.0.10.0/24 is directly connected, hous
+O   5.0.10.0/24 [110/10] is directly connected, hous, 02w4d23h
+C>* 5.0.11.0/24 is directly connected, salt
+O   5.0.11.0/24 [110/1500] is directly connected, salt, 02w6d05h
+O>* 5.0.12.0/24 [110/20] via 5.0.13.2, seat, 01w1d23h
+C>* 5.0.13.0/24 is directly connected, seat
+O   5.0.13.0/24 [110/10] is directly connected, seat, 02w4d23h
+O>* 5.0.199.0/24 [110/20] via 5.0.10.1, hous, 4d12h44m
+O>* 5.101.0.0/24 [110/50] via 5.0.10.1, hous, 01w1d23h
+O>* 5.102.0.0/24 [110/50] via 5.0.13.2, seat, 01w1d23h
+O>* 5.103.0.0/24 [110/40] via 5.0.10.1, hous, 01w1d23h
+O>* 5.104.0.0/24 [110/30] via 5.0.10.1, hous, 01w1d23h
+O>* 5.105.0.0/24 [110/40] via 5.0.13.2, seat, 01w1d23h
+O>* 5.106.0.0/24 [110/20] via 5.0.10.1, hous, 01w1d23h
+O>* 5.107.0.0/24 [110/30] via 5.0.13.2, seat, 01w1d23h
+C>* 5.108.0.0/24 is directly connected, host
+O   5.108.0.0/24 [110/10] is directly connected, host, 02w6d21h
+O>* 5.109.0.0/24 [110/20] via 5.0.13.2, seat, 01w1d23h
+B>* 6.0.0.0/8 [20/0] via 179.24.32.1, ebgp_peer, 01w1d23h
+B>* 7.0.0.0/8 [20/0] via 179.24.32.1, ebgp_peer, 3d22h55m
+B>* 8.0.0.0/8 [20/0] via 179.24.32.1, ebgp_peer, 3d22h43m
+B>* 9.0.0.0/8 [200/0] via 5.109.0.2 (recursive via 5.0.13.2, seat), 00:55:12
+B>* 10.0.0.0/8 [200/0] via 5.107.0.2 (recursive via 5.0.13.2, seat), 00:28:38
+B>* 11.0.0.0/8 [200/0] via 5.103.0.2 (recursive via 5.0.10.1, hous), 01w1d23h
+B>* 12.0.0.0/8 [200/0] via 5.109.0.2 (recursive via 5.0.13.2, seat), 00:55:12
+B>* 13.0.0.0/8 [200/0] via 5.103.0.2 (recursive via 5.0.10.1, hous), 01w1d23h
+B>* 14.0.0.0/8 [200/0] via 5.105.0.2 (recursive via 5.0.13.2, seat), 01w1d23h
+B>* 15.0.0.0/8 [200/0] via 5.109.0.2 (recursive via 5.0.13.2, seat), 00:55:12
+B>* 16.0.0.0/8 [200/0] via 5.103.0.2 (recursive via 5.0.10.1, hous), 01w1d23h
+B>* 17.0.0.0/8 [200/0] via 5.105.0.2 (recursive via 5.0.13.2, seat), 5d09h41m
+B>* 18.0.0.0/8 [200/0] via 5.103.0.2 (recursive via 5.0.10.1, hous), 01w1d23h
+B>* 19.0.0.0/8 [20/0] via 179.24.32.1, ebgp_peer, 3d22h42m
+B>* 20.0.0.0/8 [20/0] via 179.24.32.1, ebgp_peer, 01w1d23h
+B>* 21.0.0.0/8 [200/0] via 5.101.0.2 (recursive via 5.0.10.1, hous), 01:05:03
+C * 127.0.0.0/8 is directly connected, lo
+C>* 127.0.0.0/8 is directly connected, host
+C>* 179.24.32.0/24 is directly connected, ebgp_peer
+G5_LOSA(config)# router bgp 5
+
+After the local preference was set on LOSA
+G5_LOSA(config)# do sh ip route
+Codes: K - kernel route, C - connected, S - static, R - RIP,
+       O - OSPF, I - IS-IS, B - BGP, A - Babel,
+       > - selected route, * - FIB route
+
+K>* 0.0.0.0/0 via 5.108.0.2, host
+B>* 1.0.0.0/8 [20/0] via 179.24.32.1, ebgp_peer, 00:13:26
+B>* 2.0.0.0/8 [20/0] via 179.24.32.1, ebgp_peer, 00:13:26
+B>* 3.0.0.0/8 [20/0] via 179.24.32.1, ebgp_peer, 00:13:26
+B>* 4.0.0.0/8 [200/0] via 5.101.0.2 (recursive via 5.0.10.1, hous), 00:13:31
+O>* 5.0.1.0/24 [110/60] via 5.0.13.2, seat, 01w1d23h
+  *                     via 5.0.10.1, hous, 01w1d23h
+O>* 5.0.2.0/24 [110/5030] via 5.0.10.1, hous, 01w1d23h
+O>* 5.0.3.0/24 [110/5020] via 5.0.10.1, hous, 01w1d23h
+O>* 5.0.4.0/24 [110/40] via 5.0.10.1, hous, 01w1d23h
+O>* 5.0.5.0/24 [110/30] via 5.0.10.1, hous, 01w1d23h
+O>* 5.0.6.0/24 [110/40] via 5.0.13.2, seat, 01w1d23h
+O>* 5.0.7.0/24 [110/20] via 5.0.10.1, hous, 01w1d23h
+O>* 5.0.8.0/24 [110/3010] via 5.0.10.1, hous, 01w1d23h
+O>* 5.0.9.0/24 [110/30] via 5.0.13.2, seat, 01w1d23h
+C>* 5.0.10.0/24 is directly connected, hous
+O   5.0.10.0/24 [110/10] is directly connected, hous, 02w4d23h
+C>* 5.0.11.0/24 is directly connected, salt
+O   5.0.11.0/24 [110/1500] is directly connected, salt, 02w6d05h
+O>* 5.0.12.0/24 [110/20] via 5.0.13.2, seat, 01w1d23h
+C>* 5.0.13.0/24 is directly connected, seat
+O   5.0.13.0/24 [110/10] is directly connected, seat, 02w4d23h
+O>* 5.0.199.0/24 [110/20] via 5.0.10.1, hous, 4d13h00m
+O>* 5.101.0.0/24 [110/50] via 5.0.10.1, hous, 01w1d23h
+O>* 5.102.0.0/24 [110/50] via 5.0.13.2, seat, 01w1d23h
+O>* 5.103.0.0/24 [110/40] via 5.0.10.1, hous, 01w1d23h
+O>* 5.104.0.0/24 [110/30] via 5.0.10.1, hous, 01w1d23h
+O>* 5.105.0.0/24 [110/40] via 5.0.13.2, seat, 01w1d23h
+O>* 5.106.0.0/24 [110/20] via 5.0.10.1, hous, 01w1d23h
+O>* 5.107.0.0/24 [110/30] via 5.0.13.2, seat, 01w1d23h
+C>* 5.108.0.0/24 is directly connected, host
+O   5.108.0.0/24 [110/10] is directly connected, host, 02w6d21h
+O>* 5.109.0.0/24 [110/20] via 5.0.13.2, seat, 01w1d23h
+B>* 6.0.0.0/8 [20/0] via 179.24.32.1, ebgp_peer, 00:13:26
+B>* 7.0.0.0/8 [20/0] via 179.24.32.1, ebgp_peer, 00:13:26
+B>* 8.0.0.0/8 [20/0] via 179.24.32.1, ebgp_peer, 00:13:26
+B>* 9.0.0.0/8 [20/0] via 179.24.32.1, ebgp_peer, 00:13:26
+B>* 10.0.0.0/8 [20/0] via 179.24.32.1, ebgp_peer, 00:13:26
+B>* 11.0.0.0/8 [20/0] via 179.24.32.1, ebgp_peer, 00:13:26
+B>* 12.0.0.0/8 [20/0] via 179.24.32.1, ebgp_peer, 00:13:26
+B>* 13.0.0.0/8 [20/0] via 179.24.32.1, ebgp_peer, 00:13:26
+B>* 14.0.0.0/8 [20/0] via 179.24.32.1, ebgp_peer, 00:13:26
+B>* 15.0.0.0/8 [200/0] via 5.109.0.2 (recursive via 5.0.13.2, seat), 00:13:25
+B>* 16.0.0.0/8 [20/0] via 179.24.32.1, ebgp_peer, 00:13:26
+B>* 17.0.0.0/8 [20/0] via 179.24.32.1, ebgp_peer, 00:13:26
+B>* 18.0.0.0/8 [20/0] via 179.24.32.1, ebgp_peer, 00:13:26
+B>* 19.0.0.0/8 [20/0] via 179.24.32.1, ebgp_peer, 00:13:26
+B>* 20.0.0.0/8 [20/0] via 179.24.32.1, ebgp_peer, 00:13:26
+B>* 21.0.0.0/8 [20/0] via 179.24.32.1, ebgp_peer, 00:13:26
+C * 127.0.0.0/8 is directly connected, lo
+C>* 127.0.0.0/8 is directly connected, host
+C>* 179.24.32.0/24 is directly connected, ebgp_peer
